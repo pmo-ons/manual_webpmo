@@ -1,0 +1,2670 @@
+<!-- Cole este conteúdo em um Web Template do Power Pages. Para produção, hospede styles.css, app.js e assets como Web Files. -->
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Guia do Usuário do WebPMO | ONS</title><meta name="description" content="Documentação de uso do WebPMO para envio de dados ao PMO.">
+<link rel="stylesheet" href="styles.css"></head><body>
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+<header class="top"><button id="menuBtn" aria-label="Abrir menu">☰</button><div class="brand"><span class="brandmark">ONS</span><span>Guia do Usuário do WebPMO</span></div><a class="system" href="https://pop.ons.org.br/pop/" target="_blank" rel="noopener">Acessar WebPMO ↗</a></header>
+<div class="layout"><aside id="sidebar"><div class="search"><label for="q">Pesquisar no guia</label><input id="q" type="search" placeholder="Ex.: volume inicial"></div><nav id="toc" aria-label="Sumário"></nav><div class="version">Versão 2.0 · Agosto/2026<br><span>Conteúdo em homologação</span></div></aside>
+<main id="conteudo"><section class="hero"><div><p class="eyebrow">DOCUMENTAÇÃO OFICIAL</p><h1>Guia do Usuário do WebPMO</h1><p>Orientações para declaração dos dados utilizados na elaboração do Programa Mensal de Operação Energética e suas revisões.</p><div class="actions"><a class="primary" href="#acesso-ao-sistema">Começar</a><a href="mailto:pmo@ons.org.br">Falar com a equipe do PMO</a></div></div><div class="heroCard"><strong>Atalhos</strong><a href="#prazos-do-pmo-e-suas-revisoes">Prazos do PMO</a><a href="#situacao-da-coleta">Situação da coleta</a><a href="#insumos-enviados-por-meio-do-webpmo">Insumos</a></div></section>
+<div class="notice"><strong>Atenção:</strong> esta versão foi gerada a partir da minuta 2.0. Os pontos pendentes listados no arquivo <code>PENDENCIAS_EDITORIAIS.md</code> devem ser validados antes da publicação pública.</div>
+<article id="doc">
+<div title="header">
+
+
+</div>
+<div dir="ltr" id="Table of Contents1">
+<div dir="ltr" id="TextSection">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<ol>
+<li><h2 id="introducao"><a name="_Toc235475271"></a>
+	Introdução</h2></li>
+</ol>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">O
+presente guia tem por objetivo orientar usuário do sistema WebPMO na
+declaração dos dados de sua responsabilidade para o horizonte de
+curto prazo, com vistas à elaboração do Programa Mensal de
+Operação Energética - PMO do Operador Nacional do Sistema Elétrico
+- ONS. O sistema, em operação desde 2014, viabiliza e
+operacionaliza o fluxo de coleta e consistência de dados para o PMO
+e suas revisões semanais, garantindo a eficiência e segurança do
+processo.</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Neste
+guia, serão abordados os aspectos regulatórios que regem o processo
+do PMO e suas principais características, as formas de acesso ao
+sistema e solicitação de cadastro de novos usuários, bem como o
+detalhamento dos insumos que podem ser enviados pelos Agentes de
+Geração<a class="sdfootnoteanc" href="#sdfootnote1sym" name="sdfootnote1anc"><sup>1</sup></a>,
+finalizando com um resumo dos principais links úteis relacionados ao
+processo do PMO e contatos da Gerência de Programação Mensal -
+PRM.</p>
+<ol start="2">
+<li><h2 id="programa-mensal-de-operacao-energetica-pmo"><a name="_Toc235475272"></a>Programa
+	Mensal de Operação Energética - PMO</h2>
+<ol>
+<li><h3 id="regulacao"><a name="_Toc235475273"></a>Regulação</h3></li>
+</ol>
+</li></ol>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">A
+Resolução Normativa ANEEL Nº 1.032/2022 [1], a qual consolida os
+atos regulatórios relativos à elaboração do PMO, define o seu
+objetivo por <i>“estabelecer as metas e diretrizes
+eletroenergéticas da operação do Sistema Interligado Nacional –
+SIN, de forma a assegurar a otimização dos recursos disponíveis
+para atendimento da carga”.</i></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Para
+tal, é de responsabilidade da equipe do PMO do ONS a coordenação e
+a elaboração do Programa Mensal, de forma a atender o processo
+descrito pelos Submódulos 4.3 – Procedimental [2] e 4.3 –
+Responsabilidades [3] dos Procedimentos de Rede do ONS. Aos Agentes
+de Geração, cabe o fornecimento <i>“ao ONS, nos formatos, meios e
+prazos estabelecidos, os dados de usinas simuladas individualmente
+nos modelos energéticos necessários para a realização do PMO e
+suas revisões”</i>. A análise e consolidação de tais dados e
+informações recebidos é de responsabilidade do Operador.</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Dessa
+forma, os capítulos a seguir do Guia tem como finalidade auxiliar os
+Agentes no envio dos insumos que farão parte dos dados de entrada no
+modelo DECOMP.</p>
+<ol>
+<ol start="2">
+<li><h3 id="modelo-decomp"><a name="_Toc235475274"></a>Modelo
+		DECOMP</h3></li>
+</ol>
+</ol>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Desenvolvido
+pelo Centro de Pesquisas de Energia Elétrica – CEPEL, o modelo
+DECOMP é a ferramenta oficial de elaboração do PMO pelo ONS e para
+estabelecimento do Preço de Liquidação de Diferenças - PLD, pela
+Câmara de Comercialização de Energia Elétrica – CCEE. O modelo
+trata do problema de planejamento de curto de prazo de sistemas
+hidrotérmicos e seu objetivo principal é indicar, para cada estágio
+(semanal ou mensal) e patamar de carga considerados no estudo, os
+montantes de geração de usinas hidrelétricas e termelétricas, com
+base nas previsões de afluência e carga e a disponibilidade dos
+componentes do sistema. Além das metas de geração, define os
+valores dos intercâmbios de energia entre subsistemas e o Custo
+Marginal de Operação – CMO, de modo a minimizar o valor esperado
+do custo total de operação ao longo do horizonte do estudo
+levando-se em conta os critérios de aversão a risco estabelecidos.</p>
+<p lang="pt-BR" style="margin-bottom: 0.17in">O DECOMP integra uma
+cadeia de modelos de otimização energética, sendo precedido pelo
+modelo NEWAVE, de médio prazo, e sucedido pelo modelo DESSEM, de
+curtíssimo prazo. Os três modelos são executados de forma
+encadeada, acoplados entre eles pela Função de Custo Futuro – FCF
+gerada pelo modelo antecessor, no caso do DECOMP e DESSEM. A <span style="background: #c0c0c0">Tabela 1</span>
+resume as principais características dos modelos:</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><a name="_Ref174441947"></a>
+<font size="2" style="font-size: 9pt">Tabela <span style="background: #c0c0c0">1</span>
+- Encadeamento dos modelos via horizonte rolante. Fonte: CEPEL [5].</font></p>
+<table cellpadding="5" cellspacing="0" width="100%">
+<col width="29*"/>
+<col width="27*"/>
+<col width="31*"/>
+<col width="44*"/>
+<col width="41*"/>
+<col width="57*"/>
+<col width="28*"/>
+<tbody>
+<tr>
+<td bgcolor="#00b050" height="29" style="background: #00b050; border-top: 1.00pt solid #000000; border-bottom: 1.00pt solid #000000; border-left: none; border-right: none; padding: 0in" width="11%"><p align="center" class="western" lang="pt-BR">
+<font color="#ffffff"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><b>Prazo</b></span></font></font></p>
+</td>
+<td bgcolor="#00b050" style="background: #00b050; border-top: 1.00pt solid #000000; border-bottom: 1.00pt solid #000000; border-left: none; border-right: none; padding: 0in" width="10%"><p align="center" class="western" lang="pt-BR">
+<font color="#ffffff"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><b>Aplicação</b></span></font></font></p>
+</td>
+<td bgcolor="#00b050" style="background: #00b050; border-top: 1.00pt solid #000000; border-bottom: 1.00pt solid #000000; border-left: none; border-right: none; padding: 0in" width="12%"><p align="center" class="western" lang="pt-BR">
+<font color="#ffffff"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><b>Horizonte</b></span></font></font></p>
+</td>
+<td bgcolor="#00b050" style="background: #00b050; border-top: 1.00pt solid #000000; border-bottom: 1.00pt solid #000000; border-left: none; border-right: none; padding: 0in" width="17%"><p align="center" class="western" lang="pt-BR">
+<font color="#ffffff"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><b>Discretização</b></span></font></font></p>
+</td>
+<td bgcolor="#00b050" style="background: #00b050; border-top: 1.00pt solid #000000; border-bottom: 1.00pt solid #000000; border-left: none; border-right: none; padding: 0in" width="16%"><p align="center" class="western" lang="pt-BR">
+<font color="#ffffff"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><b>Árvore
+				de Cenários</b></span></font></font></p>
+</td>
+<td bgcolor="#00b050" style="background: #00b050; border-top: 1.00pt solid #000000; border-bottom: 1.00pt solid #000000; border-left: none; border-right: none; padding: 0in" width="22%"><p align="center" class="western" lang="pt-BR">
+<font color="#ffffff"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><b>Modelagem
+				do Sistema</b></span></font></font></p>
+</td>
+<td bgcolor="#00b050" style="background: #00b050; border-top: 1.00pt solid #000000; border-bottom: 1.00pt solid #000000; border-left: none; border-right: none; padding: 0in" width="11%"><p align="center" class="western" lang="pt-BR">
+<font color="#ffffff"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><b>Estratégia
+				de Solução</b></span></font></font></p>
+</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td bgcolor="#d9d9d9" height="50" style="background: #d9d9d9; border: none; padding: 0in" width="11%"><p align="center" class="western" lang="pt-BR">
+<font color="#000000"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal">Médio</span></font></font></p>
+</td>
+<td bgcolor="#d9d9d9" style="background: #d9d9d9; border: none; padding: 0in" width="10%"><p align="center" class="western" lang="pt-BR">
+<font color="#000000"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal">Mensal</span></font></font></p>
+</td>
+<td bgcolor="#d9d9d9" style="background: #d9d9d9; border: none; padding: 0in" width="12%"><p align="center" class="western" lang="pt-BR">
+<font color="#000000"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal">10
+				anos</span></font></font></p>
+</td>
+<td bgcolor="#d9d9d9" style="background: #d9d9d9; border: none; padding: 0in" width="17%"><p align="center" class="western" lang="pt-BR">
+<font color="#000000"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal">Mensal,
+				patamares de carga</span></font></font></p>
+</td>
+<td bgcolor="#d9d9d9" style="background: #d9d9d9; border: none; padding: 0in" width="16%"><p align="center" class="western" lang="pt-BR">
+<font color="#000000"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal">Estocástica,
+				amostra de cenários</span></font></font></p>
+</td>
+<td bgcolor="#d9d9d9" style="background: #d9d9d9; border: none; padding: 0in" width="22%"><p align="center" class="western" lang="pt-BR">
+<font color="#000000"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal">Usinas
+				individualizadas, Reservatórios equivalentes e intercâmbios</span></font></font></p>
+</td>
+<td bgcolor="#d9d9d9" style="background: #d9d9d9; border: none; padding: 0in" width="11%"><p align="center" class="western" lang="pt-BR">
+<font color="#000000"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal">PDDE</span></font></font></p>
+</td>
+</tr>
+<tr>
+<td height="30" style="border: none; padding: 0in" width="11%"><p align="center" class="western" lang="pt-BR">
+<font color="#000000"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal">Curto</span></font></font></p>
+</td>
+<td style="border: none; padding: 0in" width="10%"><p align="center" class="western" lang="pt-BR">
+<font color="#000000"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal">Semanal</span></font></font></p>
+</td>
+<td style="border: none; padding: 0in" width="12%"><p align="center" class="western" lang="pt-BR">
+<font color="#000000"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal">2
+				meses (pode ir até 1 ano)</span></font></font></p>
+</td>
+<td style="border: none; padding: 0in" width="17%"><p align="center" class="western" lang="pt-BR">
+<font color="#000000"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal">Sem/Mensal,
+				patamares de carga</span></font></font></p>
+</td>
+<td style="border: none; padding: 0in" width="16%"><p align="center" class="western" lang="pt-BR" style="margin-bottom: 0in">
+<font color="#000000"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal">Determinística</span></font></font></p>
+<p align="center" class="western" lang="pt-BR" style="margin-bottom: 0in">
+<font color="#000000"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal">+</span></font></font></p>
+<p align="center" class="western" lang="pt-BR"><font color="#000000"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal">Estocástica,
+				árvore completa</span></font></font></p>
+</td>
+<td style="border: none; padding: 0in" width="22%"><p align="center" class="western" lang="pt-BR">
+<font color="#000000"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal">Usinas
+				individualizadas e intercâmbios</span></font></font></p>
+</td>
+<td style="border: none; padding: 0in" width="11%"><p align="center" class="western" lang="pt-BR">
+<font color="#000000"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal">PDD</span></font></font></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="#d9d9d9" height="9" style="background: #d9d9d9; border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: none; padding: 0in" width="11%"><p align="center" class="western" lang="pt-BR">
+<font color="#000000"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal">Curtíssimo</span></font></font></p>
+</td>
+<td bgcolor="#d9d9d9" style="background: #d9d9d9; border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: none; padding: 0in" width="10%"><p align="center" class="western" lang="pt-BR">
+<font color="#000000"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal">Diário</span></font></font></p>
+</td>
+<td bgcolor="#d9d9d9" style="background: #d9d9d9; border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: none; padding: 0in" width="12%"><p align="center" class="western" lang="pt-BR">
+<font color="#000000"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal">2
+				semanas</span></font></font></p>
+</td>
+<td bgcolor="#d9d9d9" style="background: #d9d9d9; border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: none; padding: 0in" width="17%"><p align="center" class="western" lang="pt-BR">
+<font color="#000000"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal">meia-hora</span></font></font></p>
+</td>
+<td bgcolor="#d9d9d9" style="background: #d9d9d9; border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: none; padding: 0in" width="16%"><p align="center" class="western" lang="pt-BR">
+<font color="#000000"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal">Determinística</span></font></font></p>
+</td>
+<td bgcolor="#d9d9d9" style="background: #d9d9d9; border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: none; padding: 0in" width="22%"><p align="center" class="western" lang="pt-BR">
+<font color="#000000"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span lang="en-US"><i>Unit
+				commitment</i></span></span></font></font><font color="#000000"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span lang="en-US">
+				térmico, fluxo DC</span></span></font></font></p>
+</td>
+<td bgcolor="#d9d9d9" style="background: #d9d9d9; border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: none; padding: 0in" width="11%"><p align="center" class="western" lang="pt-BR">
+<font color="#000000"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal">MILP</span></font></font></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="western" lang="pt-BR" style="margin-top: 0.17in; margin-bottom: 0.17in">
+Todos os Manuais de Referência<a class="sdfootnoteanc" href="#sdfootnote2sym" name="sdfootnote2anc"><sup>2</sup></a>
+e Manuais do Usuário<a class="sdfootnoteanc" href="#sdfootnote3sym" name="sdfootnote3anc"><sup>3</sup></a>
+da cadeia de modelos de otimização se encontram disponíveis na
+área de documentação técnica [4] e no ambiente Libs [5]
+disponibilizados pelo CEPEL. 
+</p>
+<p class="western" lang="pt-BR" style="margin-top: 0.17in; margin-bottom: 0.17in">
+Para a execução da versão vigente do modelo DECOMP na cadeia
+oficial de modelos de programação da operação e formação de
+preço, são necessários alguns arquivos de entrada:</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><font size="2" style="font-size: 9pt">Tabela
+<span style="background: #c0c0c0">2</span> - Lista dos principais
+arquivos de entrada do modelo DECOMP</font></p>
+<table cellpadding="5" cellspacing="0" width="664">
+<col width="184"/>
+<col width="460"/>
+<tbody>
+<tr>
+<td bgcolor="#00b050" height="10" style="background: #00b050; border-top: 1.00pt solid #000000; border-bottom: 1.00pt solid #000000; border-left: none; border-right: none; padding: 0in" width="184"><p align="center" class="western" lang="pt-BR">
+<font color="#ffffff"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><b>Nome
+				do arquivo</b></span></font></font></p>
+</td>
+<td bgcolor="#00b050" style="background: #00b050; border-top: 1.00pt solid #000000; border-bottom: 1.00pt solid #000000; border-left: none; border-right: none; padding: 0in" width="460"><p align="center" class="western" lang="pt-BR">
+<font color="#ffffff"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><b>Descrição
+				</b></span></font></font>
+</p>
+</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td bgcolor="#d9d9d9" height="10" style="background: #d9d9d9; border: none; padding: 0in" width="184"><p align="center" class="western" lang="pt-BR">
+<font color="#000000"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal">CASO.dat</span></font></font></p>
+</td>
+<td bgcolor="#d9d9d9" style="background: #d9d9d9; border: none; padding: 0in" width="460"><p align="center" class="western" lang="pt-BR">
+<font color="#000000"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal">Contém
+				nome do arquivo que lista os arquivos de entrada do estudo</span></font></font></p>
+</td>
+</tr>
+<tr>
+<td height="10" style="border: none; padding: 0in" width="184"><p align="center" class="western" lang="pt-BR">
+<font color="#000000"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal">CORTES-0MM.dat</span></font></font></p>
+</td>
+<td style="border: none; padding: 0in" width="460"><p align="center" class="western" lang="pt-BR">
+<font color="#000000"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal">FCF
+				produzida pelo NEWAVE</span></font></font></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="#d9d9d9" height="10" style="background: #d9d9d9; border: none; padding: 0in" width="184"><p align="center" class="western" lang="pt-BR">
+<font color="#000000"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal">CORTESH.dat</span></font></font></p>
+</td>
+<td bgcolor="#d9d9d9" style="background: #d9d9d9; border: none; padding: 0in" width="460"><p align="center" class="western" lang="pt-BR">
+<font color="#000000"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal">Cabeçalho
+				da FCF produzida pelo NEWAVE</span></font></font></p>
+</td>
+</tr>
+<tr>
+<td height="10" style="border: none; padding: 0in" width="184"><p align="center" class="western" lang="pt-BR">
+<font color="#000000"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal">DADGER.rvX</span></font></font></p>
+</td>
+<td style="border: none; padding: 0in" width="460"><p align="center" class="western" lang="pt-BR">
+<font color="#000000"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal">Arquivo
+				com os dados gerais do estudo</span></font></font></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="#d9d9d9" height="10" style="background: #d9d9d9; border: none; padding: 0in" width="184"><p align="center" class="western" lang="pt-BR">
+<font color="#000000"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal">DADGNL.rvX</span></font></font></p>
+</td>
+<td bgcolor="#d9d9d9" style="background: #d9d9d9; border: none; padding: 0in" width="460"><p align="center" class="western" lang="pt-BR">
+<font color="#000000"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal">Arquivo
+				com os dados de entrada das usinas termelétricas a GNL</span></font></font></p>
+</td>
+</tr>
+<tr>
+<td height="10" style="border: none; padding: 0in" width="184"><p align="center" class="western" lang="pt-BR">
+<font color="#000000"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal">HIDR.dat</span></font></font></p>
+</td>
+<td style="border: none; padding: 0in" width="460"><p align="center" class="western" lang="pt-BR">
+<font color="#000000"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal">Cadastro
+				de dados das usinas hidrelétricas</span></font></font></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="#d9d9d9" height="10" style="background: #d9d9d9; border: none; padding: 0in" width="184"><p align="center" class="western" lang="pt-BR">
+<font color="#000000"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal">INDICES.csv</span></font></font></p>
+</td>
+<td bgcolor="#d9d9d9" style="background: #d9d9d9; border: none; padding: 0in" width="460"><p align="center" class="western" lang="pt-BR">
+<font color="#000000"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal">Arquivo
+				que indica o polinjus</span></font></font></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="#ffffff" height="23" style="background: #ffffff; border: none; padding: 0in" width="184"><p align="center" class="western" lang="pt-BR">
+<font color="#000000"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal">MLT.dat</span></font></font></p>
+</td>
+<td bgcolor="#ffffff" style="background: #ffffff; border: none; padding: 0in" width="460"><p align="center" class="western" lang="pt-BR">
+<font color="#000000"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal">Arquivo
+				que contém o histórico mensal de vazão, em valores de média
+				de longo termo (estes valores são utilizados nos relatórios da
+				operação do modelo DECOMP)</span></font></font></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="#d9d9d9" height="10" style="background: #d9d9d9; border: none; padding: 0in" width="184"><p align="center" class="western" lang="pt-BR">
+<font color="#000000"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal">PERDAS.dat</span></font></font></p>
+</td>
+<td bgcolor="#d9d9d9" style="background: #d9d9d9; border: none; padding: 0in" width="460"><p align="center" class="western" lang="pt-BR">
+<font color="#000000"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal">Arquivo
+				de fatores de perda</span></font></font></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="#ffffff" height="10" style="background: #ffffff; border: none; padding: 0in" width="184"><p align="center" class="western" lang="pt-BR">
+<font color="#000000"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal">POLINJUS.csv</span></font></font></p>
+</td>
+<td bgcolor="#ffffff" style="background: #ffffff; border: none; padding: 0in" width="460"><p align="center" class="western" lang="pt-BR">
+<font color="#000000"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal">Arquivo
+				de cadastro das famílias de curvas de polinômios de jusante</span></font></font></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="#d9d9d9" height="10" style="background: #d9d9d9; border: none; padding: 0in" width="184"><p align="center" class="western" lang="pt-BR">
+<font color="#000000"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal">RENOVAVEIS.csv</span></font></font></p>
+</td>
+<td bgcolor="#d9d9d9" style="background: #d9d9d9; border: none; padding: 0in" width="460"><p align="center" class="western" lang="pt-BR">
+<font color="#000000"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal">Arquivo
+				contendo a previsão de geração em blocos de energia para as
+				usinas não simuladas individualmente</span></font></font></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="#ffffff" height="10" style="background: #ffffff; border: none; padding: 0in" width="184"><p align="center" class="western" lang="pt-BR">
+<font color="#000000"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal">rvX</span></font></font></p>
+</td>
+<td bgcolor="#ffffff" style="background: #ffffff; border: none; padding: 0in" width="460"><p align="center" class="western" lang="pt-BR">
+<font color="#000000"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal">Arquivo
+				descritor dos dados de entrada do estudo</span></font></font></p>
+</td>
+</tr>
+<tr>
+<td bgcolor="#d9d9d9" height="10" style="background: #d9d9d9; border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: none; padding: 0in" width="184"><p align="center" class="western" lang="pt-BR">
+<font color="#000000"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal">VAZOES.rvX</span></font></font></p>
+</td>
+<td bgcolor="#d9d9d9" style="background: #d9d9d9; border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: none; padding: 0in" width="460"><p align="center" class="western" lang="pt-BR">
+<font color="#000000"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal">Arquivo
+				com os dados do(s) cenário(s) de vazões</span></font></font></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="western" lang="pt-BR" style="margin-top: 0.17in; margin-bottom: 0.17in">
+Onde “X” é a extensão utilizada nos estudos do DECOMP seguindo
+o critério de numeração das revisões do PMO. A extensão RV0 está
+associada ao estudo de elaboração do PMO, e à medida que ocorrem
+revisões da programação, a extensão assume valores sequenciais:
+RV1 (primeira revisão), RV2 (segunda revisão) e assim por diante. E
+“MM” é o referido mês do PMO.</p>
+<ol>
+<ol start="3">
+<li><h3 id="estrutura-dos-estudos"><a name="_Toc235475275"></a><a name="_Ref202888088"></a><a name="_Ref202888085"></a><a name="_Ref202888082"></a><a name="_Ref202888061"></a>
+		Estrutura dos Estudos</h3></li>
+</ol>
+</ol>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Atualmente,
+o horizonte de estudo do modelo DECOMP, utilizado para a confecção
+do PMO, é de dois meses, sendo o primeiro determinístico,
+discretizado semana a semana, e o segundo mês sendo estocástico,
+englobando o mês em um só bloco.</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">As
+semanas operativas correspondem ao período que se inicia à <b>0h00min
+do sábado e termina às 24h00min da sexta-feira</b> subsequente e
+abrangem todos os dias do mês a que se refere o estudo, podendo
+também incluir dias dos meses adjacentes.</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">A
+descrição acima pode será exemplificada a seguir:</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in"><u>PMO
+de Novembro de 2024</u></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">O PMO
+de Novembro possui 7 estágios, sendo estes formados por 6 semanas
+operativas e pelo segundo mês de estudo (dezembro), como explicitado
+na figura a seguir.</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><img align="bottom" alt="Ilustração do Guia do Usuário do WebPMO" border="0" height="151" loading="lazy" name="Image2" src="assets/Guia do usuário do WebPMO_html_f5cf82c1.png" width="225"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><font size="2" style="font-size: 9pt">Figura
+<span style="background: #c0c0c0">1</span>: Estágios do PMO de
+Novembro de 2024.</font></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Pelo
+exemplo dado, nota-se que a primeira semana operativa do PMO de
+Novembro inclui dias do mês de outubro. Isso decorre do fato de que
+o conjunto de semanas operativas que forma o primeiro mês de estudo
+precisa contemplar todos os dias do referido mês. Tendo em vista que
+as semanas operativas vão sempre de sábado a sexta-feira, se faz
+necessário incluir dias de mês anterior às semanas operativas que
+compõe o primeiro mês de estudo.</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">É
+também importante notar que o primeiro dia do último estágio
+(segundo mês) é dado pelo primeiro dia após a última semana
+operativa, <b>não sendo necessariamente o primeiro dia do mês
+civil</b>. No caso exemplificado acima o último estágio começa no
+sétimo dia do mês, pois a última semana operativa termina às 24h
+da sexta-feira, dia 06/12/2024.</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in"><u>PMO
+de Dezembro de 2024</u></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">O PMO
+de Dezembro possui 6 estágios, sendo estes formados por 5 semanas
+operativas e pelo segundo mês de estudo, como explicitado na figura
+a seguir.</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><img align="bottom" alt="Ilustração do Guia do Usuário do WebPMO" border="0" height="151" loading="lazy" name="Image3" src="assets/Guia do usuário do WebPMO_html_65ba4d7.png" width="244"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><font size="2" style="font-size: 9pt">Figura
+<span style="background: #c0c0c0">2</span>: Estágios do PMO de
+Dezembro de 2024.</font></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">No caso
+acima, o último estágio (segundo mês de estudo) começa no dia
+04/01/2025, pois a última semana operativa, que garante que todos os
+dias do primeiro mês de estudo estejam contemplados, termina às
+24:00h da sexta-feira, dia 03/01/2025. O último estágio termina
+sempre no último dia do segundo mês civil.</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Dependendo
+do mês do estudo, o número de semanas operativas e,
+consequentemente, o número de estágios e revisões, podem variar.
+No primeiro exemplo, o PMO tem 6 semanas operativas e conta com 4
+revisões (além da revisão 0). Já no segundo exemplo, o PMO tem 5
+semanas operativas e conta com 3 revisões (além da revisão 0). 
+</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Além
+disso, é válido ressaltar que, por consequência das definições
+apresentadas, <b>a </b><b>última semana operativa de um dado PMO se
+torna a primeira semana operativa do PMO seguinte, caso esta semana
+possua dias do mês posterior. </b>Nos exemplos apresentados, a
+semana de 30/11/2024 a 06/12/2024 é o último estágio semanal do
+PMO de Novembro de 2024 e primeiro estágio semanal do PMO de
+Dezembro de 2024. Nos demais casos, em que o encerramento do primeiro
+mês do PMO seja coincidente com o final do mês civil, o próximo
+PMO será iniciado no primeiro dia do mês.</p>
+<p class="western callout" lang="pt-BR" style="margin-bottom: 0.17in">A<img align="left" alt="Ilustração do Guia do Usuário do WebPMO" border="0" height="76" hspace="12" loading="lazy" name="Imagem 1607972778" src="assets/Guia do usuário do WebPMO_html_e33a97d9.png" width="76"/>
+
+equipe do PMO disponibiliza na página da Programação Mensal no
+SINtegre um painel com as informações gerais do PMO e suas
+revisões, com suas respectivas datas ao longo do ano. O painel se
+encontra disponível em
+<font color="#0000ff"><u><a href="https://sintegre.ons.org.br/sites/9/52/paginas/default.aspx">https://sintegre.ons.org.br/sites/9/52/</a><a href="https://sintegre.ons.org.br/sites/9/52/paginas/default.aspx">paginas</a><a href="https://sintegre.ons.org.br/sites/9/52/paginas/default.aspx">/default.aspx</a></u></font>
+e também pode ser acessado utilizando o QR Code ao lado. 
+</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in"><br/>
+<br/>
+</p>
+<ol>
+<ol start="4">
+<li><h3 id="prazos-do-pmo-e-suas-revisoes"><a name="_Toc235475276"></a>Prazos
+		do PMO e suas revisões</h3></li>
+</ol>
+</ol>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Em
+semanas de PMO, estes são os principais prazos para elaboração do
+estudo que devem ser cumpridos pelo ONS e pelos Agentes de Geração
+para o modelo de curto prazo:</p>
+<ul>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Na segunda-feira
+	às 08:00, o sistema WebPMO é aberto para recebimento dos insumos
+	até às 17:00 do mesmo dia;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Até às 12:00 de
+	quinta-feira, podem ser enviadas retificações dos dados
+	informados;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Na quarta-feira às
+	09:00, o ONS rejeita o insumo de “volume inicial” para reenvio
+	dos dados mais atualizados, a fim de maior acurácia dos níveis de
+	partida do estudo, com prazo de envio até às 16:00 do mesmo dia;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Na quinta-feira às
+	14:00, se inicia o 1º dia da Reunião do PMO<a class="sdfootnoteanc" href="#sdfootnote4sym" name="sdfootnote4anc"><sup>4</sup></a>,
+	na qual são apresentados os dados de entrada nos modelos
+	energéticos de médio e curto prazo, bem como as condições
+	eletroenergéticas do SIN; 
+	</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Na sexta-feira às
+	09:30, se inicia o 2º dia da Reunião do PMO, onde são
+	apresentados os principais resultados do PMO, com a previsão de
+	vazões e resultados do modelo de curto prazo; 
+	</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Até às 10:00 de
+	sexta-feira, são disponibilizados no SINtegre o <font color="#0000ff"><u><a href="https://sintegre.ons.org.br/sites/9/52/paginas/servicos/historico-de-produtos.aspx?produto=Deck%20Preliminar%20DECOMP%20-%20Valor%20Esperado">deck
+	preliminar</a></u></font>  para avaliação<a class="sdfootnoteanc" href="#sdfootnote5sym" name="sdfootnote5anc"><sup>5</sup></a>
+	dos Agentes e os <font color="#0000ff"><u><a href="https://sintegre.ons.org.br/sites/9/52/paginas/servicos/historico-de-produtos.aspx?produto=Dados%20Semanais%20dos%20Agentes%20de%20Gera%C3%A7%C3%A3o%20para%20o%20PMO">dados
+	dos Agentes de Geração</a></u></font> utilizados no estudo;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Até às 12:00 da
+	sexta-feira, é publicado o <font color="#0000ff"><u><a href="https://sintegre.ons.org.br/sites/9/52/paginas/servicos/historico-de-produtos.aspx?produto=Deck%20e%20Resultados%20DECOMP%20-%20Valor%20Esperado">deck
+	oficial do modelo de curto prazo</a></u></font>;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Durante a
+	sexta-feira, são publicados os relatórios com os principais
+	resultados do PMO<a class="sdfootnoteanc" href="#sdfootnote6sym" name="sdfootnote6anc"><sup>6</sup></a>.</p></li>
+</ul>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Na <span style="background: #c0c0c0">Figura 3</span>
+abaixo, é mostrada uma linha do tempo com os principais prazos do
+PMO mencionados:</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in; page-break-after: avoid">
+<img align="bottom" alt="Ilustração do Guia do Usuário do WebPMO" border="0" height="201" loading="lazy" name="Gráfico 3" src="assets/Guia do usuário do WebPMO_html_58249f6f.gif" width="643"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><a name="_Ref181706707"></a>
+<font size="2" style="font-size: 9pt">Figura <span style="background: #c0c0c0">3</span>
+- Principais prazos da semana de elaboração do PMO.</font></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Nas
+semanas de revisões do PMO, os principais prazos a serem cumpridos
+se diferem em relação aos do PMO para o horizonte de curto prazo:</p>
+<ul>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Na quarta-feira às
+	08:00, o sistema WebPMO é aberto para recebimento dos insumos até
+	às 11:00 da quinta-feira;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Até às 14:00 de
+	quinta-feira, podem ser enviadas retificações dos dados
+	informados;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Até às 10:00 de
+	sexta-feira, são disponibilizados no SINtegre o <font color="#0000ff"><u><a href="https://sintegre.ons.org.br/sites/9/52/paginas/servicos/historico-de-produtos.aspx?produto=Deck%20Preliminar%20DECOMP%20-%20Valor%20Esperado">deck
+	preliminar</a></u></font>  para avaliação<a class="sdfootnoteanc" href="#sdfootnote7sym" name="sdfootnote7anc"><sup>7</sup></a>
+	dos Agentes e os <font color="#0000ff"><u><a href="https://sintegre.ons.org.br/sites/9/52/paginas/servicos/historico-de-produtos.aspx?produto=Dados%20Semanais%20dos%20Agentes%20de%20Gera%C3%A7%C3%A3o%20para%20o%20PMO">dados
+	dos Agentes de Geração</a></u></font> utilizados no estudo;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Até às 12:00 da
+	sexta-feira, é publicado o <font color="#0000ff"><u><a href="https://sintegre.ons.org.br/sites/9/52/paginas/servicos/historico-de-produtos.aspx?produto=Deck%20e%20Resultados%20DECOMP%20-%20Valor%20Esperado">deck
+	oficial do modelo de curto prazo</a></u></font>;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Na sexta-feira às
+	15:00, se inicia a Reunião Semanal da Programação da Operação<a class="sdfootnoteanc" href="#sdfootnote8sym" name="sdfootnote8anc"><sup>8</sup></a>,
+	na qual são apresentadas as condições hidrológicas e
+	eletroenergéticas do SIN e as principais informações relevantes
+	da a revisão do PMO; 
+	</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Durante a
+	sexta-feira, são publicados os relatórios com os principais
+	resultados da revisão do PMO<a class="sdfootnoteanc" href="#sdfootnote9sym" name="sdfootnote9anc"><sup>9</sup></a>.</p></li>
+</ul>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Na <span style="background: #c0c0c0">Figura 3</span>
+abaixo, é mostrada uma linha do tempo com os principais prazos
+mencionados para as revisões do PMO:</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in; page-break-after: avoid">
+<img align="bottom" alt="Ilustração do Guia do Usuário do WebPMO" border="0" height="201" loading="lazy" name="Gráfico 4" src="assets/Guia do usuário do WebPMO_html_a386544e.gif" width="643"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><font size="2" style="font-size: 9pt">Figura
+<span style="background: #c0c0c0">4</span> - Principais prazos da
+semana de elaboração das revisões do PMO.</font></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Todos
+os produtos informados (relatórios, decks preliminares e oficiais e
+dados dos agentes de geração para o PMO) ficam disponíveis na <font color="#0000ff"><u><a href="https://sintegre.ons.org.br/sites/9/52/paginas/servicos/produtos.aspx">aba
+de produtos</a></u></font> na <font color="#0000ff"><u><a href="https://sintegre.ons.org.br/sites/9/52">área
+da Programação Mensal da Operação Energética no SINtegre</a></u></font>.
+Também nessa mesma área, está disponível um painel com as
+informações gerais do PMO, contendo os principais prazos das
+atividades do PMO e suas revisões.</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Caso
+haja necessidade de alteração nos dias da semana e horários
+indicados acima, como na ocorrência de feriados, cabe ao ONS
+informar de forma antecipada via SINtegre ou em reuniões abertas com
+os Agentes os novos prazos a serem atendidos em cada
+excepcionalidade. As novas datas também podem ser vistas acessando o
+painel citado no tópico anterior (<span style="background: #c0c0c0">Estrutura dos Estudos</span>).</p>
+<ol start="3">
+<li><h2 id="webpmo"><a name="_Toc235475277"></a>WebPMO</h2>
+<ol>
+<li><h3 id="acesso-ao-sistema"><a name="_Toc235475278"></a>Acesso
+		ao sistema</h3></li>
+</ol>
+</li></ol>
+<p class="western" lang="pt-BR" style="line-height: 115%; margin-bottom: 0.17in">
+O envio semanal de dados para o PMO do ONS se dá pelo sistema
+<font color="#0000ff"><u><a href="https://pop.ons.org.br/pop/#6325">WebPMO</a></u></font>,
+acessível através do <font color="#0000ff"><u><a href="https://sintegre.ons.org.br/">SINtegre</a></u></font>.</p>
+<p class="western callout" lang="pt-BR" style="margin-bottom: 0.25in">A<img align="left" alt="Ilustração do Guia do Usuário do WebPMO" border="0" height="76" hspace="12" loading="lazy" name="Imagem 7" src="assets/Guia do usuário do WebPMO_html_cdb1b7e5.png" width="76"/>
+
+equipe do PMO disponibiliza um <font color="#0000ff"><u><a href="https://www.youtube.com/watch?v=PAFxhsdwYtI&amp;ab_channel=ONS">vídeo
+tutorial</a></u></font>, também disponível pelo QRcode ao lado, com
+o passo a passo de como acessar o WebPMO. Alternativamente, seguem
+abaixo as instruções de acesso ao sistema:</p>
+<ol>
+<li><p lang="pt-BR" style="line-height: 115%; margin-bottom: 0.17in">
+	N<img align="left" alt="Ilustração do Guia do Usuário do WebPMO" border="0" height="17" hspace="12" loading="lazy" name="Image4" src="assets/Guia do usuário do WebPMO_html_765d3024.png" width="17"/>
+o
+	SINtegre, clicar no ícone no canto superior esquerdo da tela e
+	procurar por WebPMO.</p></li>
+</ol>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><img align="bottom" alt="Imagem 2" height="208" hspace="7" loading="lazy" name="Imagem 2" src="assets/Guia do usuário do WebPMO_html_29ac4b1f.gif" vspace="5" width="366"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><font size="2" style="font-size: 9pt">Figura
+<span style="background: #c0c0c0">5</span> - Página do SINtegre para
+o acesso ao WebPMO.</font></p>
+<ol start="2">
+<li><p lang="pt-BR" style="line-height: 115%; margin-bottom: 0.17in">
+	Para acesso à funcionalidade de envio de dados, clicar em “Estudo”
+	e, em seguida, em “Informar dados”.</p></li>
+</ol>
+<p align="center" lang="pt-BR" style="margin-bottom: 0in"><img align="bottom" alt="Imagem 3" height="106" hspace="11" loading="lazy" name="Imagem 3" src="assets/Guia do usuário do WebPMO_html_d0e20f55.gif" vspace="7" width="343"/>
+</p>
+<p align="center" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="bottom" alt="Imagem 4" height="83" hspace="9" loading="lazy" name="Imagem 4" src="assets/Guia do usuário do WebPMO_html_d9b6806c.gif" vspace="7" width="336"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><font size="2" style="font-size: 9pt">Figura
+<span style="background: #c0c0c0">6</span>: Página do WebPMO para
+acessar o envio de dados para o PMO.</font></p>
+<ol start="3">
+<li><p lang="pt-BR" style="line-height: 115%; margin-bottom: 0.17in">
+	Na tela “Informar Dados”, selecionar o estudo, agente e o insumo
+	que deseja enviar. 
+	</p></li>
+</ol>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><img align="bottom" alt="Imagem 8" height="158" hspace="7" loading="lazy" name="Imagem 8" src="assets/Guia do usuário do WebPMO_html_942b7ea1.gif" vspace="5" width="397"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><font size="2" style="font-size: 9pt">Figura
+<span style="background: #c0c0c0">7</span>: Sistema WebPMO.</font></p>
+<ol>
+<ol start="2">
+<li><h3 id="solicitacao-de-cadastro-de-novos-usuarios"><a name="_Toc235475279"></a>Solicitação
+		de cadastro de novos usuários</h3></li>
+</ol>
+</ol>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">O
+acesso ao WebPMO é concedido apenas para usuários que enviam
+informações a serem consideradas como dado de entrada para
+elaboração do PMO e suas revisões semanais, de acordo com as
+responsabilidades definidas no Submódulo 4.3 dos Procedimentos de
+Rede.</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Após a
+realização do devido cadastro do usuário no SINtegre, este poderá
+solicitar à equipe do PMO o acesso ao WebPMO via SINtegre. Por
+questões de segurança e confidencialidade do processo, a
+solicitação de cadastro de novos usuários será aceita mediante
+envio de documentação comprobatória da necessidade de acesso ao
+sistema para o envio de dados. O envio da comprovação poderá ser
+feito dentro da própria solicitação de acesso ao sistema<a class="sdfootnoteanc" href="#sdfootnote10sym" name="sdfootnote10anc"><sup>10</sup></a>
+no SINtegre. Nesse sentido, indicamos o seguinte passo a passo:</p>
+<ol>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">O gestor direto do
+	novo usuário que pretende acessar o WebPMO ou um funcionário da
+	empresa do novo usuário que já acesse o WebPMO envia um e-mail
+	para a equipe do PMO (<font color="#0000ff"><u><a href="mailto:pmo@ons.org.br">pmo@ons.org.br</a></u></font>)
+	solicitando o acesso do novo usuário ao WebPMO. O corpo do e-mail
+	deve conter as seguintes informações: nome e e-mail do usuário
+	cadastrado no SINtegre e em nome de qual Agente o solicitante fará
+	o envio de dados.</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">O novo usuário
+	que pretende acessar o WebPMO faz a solicitação de acesso ao
+	sistema diretamente no SINtegre e anexa à solicitação um print da
+	mensagem enviada à equipe do PMO pelo gestor ou funcionário da
+	mesma empresa.</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">A equipe do PMO
+	vai receber a solicitação e, caso a solicitação atenda aos
+	requisitos expostos acima, proceder com o acesso do usuário ao
+	sistema.</p></li>
+</ol>
+<ol>
+<ol start="3">
+<li><h3 id="coleta-de-dados"><a name="_Toc235475280"></a>Coleta
+		de dados</h3></li>
+</ol>
+</ol>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">No PMO
+e nas suas revisões semanais, deverão ser incorporadas informações
+atualizadas referentes ao estado do sistema, às previsões de carga
+e afluências e aos demais dados que tenham a periodicidade de
+atualização inferior a um mês. Apenas para a elaboração do PMO
+há a atualização da FCF do modelo de médio prazo, NEWAVE, que,
+portanto, será feita mensalmente.</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Sendo
+assim, os insumos a serem enviados pelos Agentes de Geração no
+WebPMO serão os de periodicidade de atualização semanal e que
+devem estar de acordo com as datas das semanas operativas do PMO em
+análise e seguindo os prazos determinados para envio dos dados,
+ambos descritos no capítulo 2 deste guia.</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">No
+capítulo 4, cada insumo será detalhado, indicando onde pode ser
+encontrado nos arquivos de entrada do modelo DECOMP, fundamentalmente
+nos arquivos <i>dadger</i> ou <i>dadgnl</i>, e como devem ser
+enviados, seguindo os parâmetros de entrada do modelo e os
+Procedimentos de Rede.</p>
+<ol>
+<ol>
+<ol>
+<li><h3 id="situacao-da-coleta"><a name="_Toc235475281"></a>Situação
+			da Coleta</h3></li>
+</ol>
+</ol>
+</ol>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">No
+momento de abertura do estudo no WebPMO, os Agentes receberão
+notificação por e-mail e os status dos insumos são ajustados para
+<b>“Não iniciado”</b>. Este status permanece até o Agente
+realizar a sua 1ª alteração. Em seguida, os próximos passos se
+darão de acordo com o fluxograma abaixo, em que as etapas do
+processo se encontram sinalizadas em linha contínua e o fluxo de
+informações em linhas tracejadas. As ações e insumos de posse dos
+Agentes de Geração foram representados em azul e as ações e
+insumos de posse do ONS na cor verde.</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><img align="bottom" alt="Ilustração do Guia do Usuário do WebPMO" border="0" height="259" loading="lazy" name="Imagem 29" src="assets/Guia do usuário do WebPMO_html_8358a9c1.gif" width="643"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><font size="2" style="font-size: 9pt">Figura
+<span style="background: #c0c0c0">8</span>: Fluxograma da coleta de
+dados.</font></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Quando
+o Agente realiza a 1ª alteração, preenchendo as informações, e
+clica no botão “Salvar”, para salvar o insumo para posterior
+revisão, seu status passa para <b>“Em andamento”</b>. Nesta
+condição, a Equipe do PMO ainda não consegue aprová-lo. No
+entanto, caso o insumo não seja enviado ou o Agente responsável
+realize o preenchimento e esqueça de enviar o formulário, a Equipe
+do PMO poderá efetuar a ação de capturar, permitindo a continuação
+do processo e fazendo com que o insumo assuma o status de
+<b>“Capturado”</b>.</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Após
+preencher e salvar, o Agente deverá enviar o insumo para análise do
+ONS, clicando no botão “Enviar”. Dessa forma, o status será
+dado como <b>“Informado”</b>, sendo ainda possível que o Agente
+faça ajustes nas informações. Caso o insumo não tenha alteração
+em relação ao envio realizado na semana anterior e tenha sido
+enviado para análise, o status se caracterizará como <b>“Pré-aprovado”
+</b>e, neste caso, o Agente não poderá mais fazer ajustes nas
+informações.</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Por
+fim, feito o envio pelo Agente, o insumo será analisado pela Equipe
+do PMO do ONS, podendo assumir os status de: <b>“Rejeitado”</b>,
+em que se entende que ajustes precisam ser feitos por parte do
+Agente, que deverá avaliar o motivo de rejeição (avaliar campo de
+mesmo nome no formulário, preenchido pelo ONS) e reenviar o mesmo
+dado ou efetuar os ajustes recomendados; ou <b>“Aprovado”</b>
+quando não foi verificada a necessidade de ajustes e o Agente não
+tem mais acesso à alteração da informação. Os dados finais
+aprovados serão os utilizados na elaboração do arquivo <i>dadger</i>
+ou <i>dadgnl</i> para a realização dos estudos do PMO e revisões.</p>
+<ol start="4">
+<li><h2 id="insumos-enviados-por-meio-do-webpmo"><a name="_Toc235475282"></a><a name="_Toc184116173"></a><a name="_Toc184116172"></a>
+	Insumos enviados por meio do WebPMO</h2>
+<ol>
+<li><h3 id="usinas-hidreletricas"><a name="_Toc235475283"></a>Usinas
+		hidrelétricas</h3>
+<ol>
+<li><h4 id="volumes-iniciais"><a name="_Toc235475284"></a>Volumes
+			iniciais</h4></li>
+</ol>
+</li></ol>
+</li></ol>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">O
+insumo relativo ao volume inicial dos reservatórios é coletado
+apenas para os reservatórios de regulação semanal ou mensal,
+conforme cadastro vigente das usinas hidrelétricas disponível no
+arquivo <i>hidr.dat</i>, uma vez que as hidrelétricas com
+reservatórios diários são consideradas como fio-d’água pelo
+modelo DECOMP.</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">O
+volume inicial dado como entrada para o modelo é a estimativa do
+valor armazenado no reservatório para o início da primeira semana
+operativa do estudo, ou seja, a previsão do nível que o
+reservatório deverá alcançar <b>ao final do dia na sexta-feira
+(23:59) e início de sábado (00:00)</b>. O valor deve ser informado
+em <b>percentual do volume útil</b> (%VU), volume do reservatório
+compreendido entre o nível máximo operativo normal e o nível
+mínimo operativo normal, dados de cadastro disponíveis no arquivo
+do <i>hidr.dat</i>.</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">A tela
+a seguir mostra um exemplo da coleta desses dados.</p>
+<p align="center" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="bottom" alt="Imagem 1" height="98" hspace="13" loading="lazy" name="Imagem 1" src="assets/Guia do usuário do WebPMO_html_7c15724d.gif" vspace="7" width="642"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><a name="_Ref184131334"></a>
+<font size="2" style="font-size: 9pt">Figura <span style="background: #c0c0c0">9</span>:
+Insumo dos volumes iniciais.</font></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Para se
+obter o valor de volume do reservatório em hm³, a partir do valor
+da cota de montante prevista/verificada, é necessário utilizar o
+polinômio cota-volume, disponível no <i>hidr.dat</i>. A partir
+desse valor, para se determinar o volume útil do reservatório,
+também em hm³, basta subtrair o volume mínimo (morto), que é um
+dado de cadastro. Por fim, para se converter o volume útil obtido de
+hm³ para %VU, é preciso dividir o volume útil pelo volume útil
+total da usina, dado pela diferença entre o volume máximo e mínimo
+(morto), ambos dados de cadastro. Na <span style="background: #c0c0c0">Figura 10</span>,
+é disponibilizada uma representação de um exemplo de reservatório,
+com suas cotas e volumes:</p>
+<p align="center" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="bottom" alt="Ilustração do Guia do Usuário do WebPMO" border="0" height="189" loading="lazy" name="Image5" src="assets/Guia do usuário do WebPMO_html_d1cf1562.png" width="376"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><a name="_Ref184130456"></a>
+<font size="2" style="font-size: 9pt">Figura <span style="background: #c0c0c0">10</span>:
+Grandezas de interesse em um reservatório.</font></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">No
+modelo DECOMP, este insumo é alocado no arquivo <i>dadger</i>, em
+seu Bloco UH (Bloco 3 - Volume dos Reservatórios). Na <span style="background: #c0c0c0">Figura 11</span>,
+pode ser vista a representação dos volumes de partida do mesmo
+agente mostrado na <span style="background: #c0c0c0">Figura 9</span>
+para os reservatórios de Jurumirim, Chavantes e Capivara. As demais
+UHEs deste Agente apresentam valor nulo de volume inicial, pois
+correspondem a reservatórios de regulação diária, que são fio
+d’água no DECOMP.</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.17in; margin-left: 0.5in">
+<img align="bottom" alt="Imagem 1" height="250" hspace="9" loading="lazy" name="Imagem 1" src="assets/Guia do usuário do WebPMO_html_fb34c3a6.gif" vspace="10" width="302"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><a name="_Ref184131687"></a>
+<font size="2" style="font-size: 9pt">Figura <span style="background: #c0c0c0">11</span>:
+Representação do Bloco UH no arquivo <i>dadger</i>. </font>
+</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">A
+representação das colunas é dada por:</p>
+<ul>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 1-2:
+	Identificação do registro: UH;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 5-7: Número
+	da usina hidráulica conforme registro 303 do arquivo de vazões
+	(UL=04);</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 10-11:
+	Indice do reservatório equivalente de energia (REE) ao qual
+	pertence a usina;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 15-24:
+	Volume armazenado inicial em percentagem do volume útil (default =
+	0.0 %) e 
+	</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 40: Chave
+	para considerar evaporação, 0 - não considera (default) e 1
+	-considera.</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 72-73: Deve
+	conter o conteúdo “NW” quando a usina não está na
+	configuração do DECOMP, mas está na configuração do NEWAVE, de
+	forma que o acoplamento entre os modelos fique compatível.</p></li>
+</ul>
+<ol>
+<ol>
+<ol>
+<ol>
+<ul>
+<li><h5 class="western" lang="pt-BR">E<img align="left" alt="Ilustração do Guia do Usuário do WebPMO" border="0" height="76" hspace="12" loading="lazy" name="Image6" src="assets/Guia do usuário do WebPMO_html_115fa17e.png" width="76"/>
+nvio
+					do Volume Inicial no WebPMO</h5></li>
+</ul>
+</ol>
+</ol>
+</ol>
+</ol>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">A
+equipe do PMO disponibiliza um tutorial no YouTube explicando passo a
+passo de como fazer o envio deste insumo, disponível em
+<font color="#0000ff"><u><a href="https://bit.ly/WebPMO_UH">https://bit.ly/WebPMO_UH</a></u></font>
+e podendo ser acessado pelo QRcode ao lado. Alternativamente, seguem
+abaixo as instruções de envio:</p>
+<ol>
+<li><p lang="pt-BR" style="line-height: 115%; margin-bottom: 0.17in">
+	Dentro do WebPMO, o Agente deverá selecionar o insumo “Volumes
+	Iniciais” (passo 1), e então clicar em pesquisar (passo 2). Em
+	seguida, selecionar o Agente no marcador (passo 3) e depois clicar
+	em informar (passo 4).</p></li>
+</ol>
+<p align="center" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="bottom" alt="Ilustração do Guia do Usuário do WebPMO" border="0" height="140" loading="lazy" name="Imagem 2" src="assets/Guia do usuário do WebPMO_html_98273465.png" width="633"/>
+</p>
+<p align="left" lang="pt-BR" style="margin-bottom: 0.14in"><font size="2" style="font-size: 9pt">		Figura
+<span style="background: #c0c0c0">12</span>: Exemplo de envio dos
+Volumes Iniciais.	</font></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Após
+clicar em informar, o usuário será encaminhado para o envio do
+insumo, no qual poderá visualizar o formulário com as usinas do
+Agente que têm relação com o insumo selecionado, como pode-se
+observar na imagem abaixo. A indicação em vermelho mostra onde
+volume deve ser digitado, calculado em %VU, seguindo as instruções
+descritas nesta seção.</p>
+<p align="center" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="bottom" alt="Shape2" height="184" hspace="11" loading="lazy" name="Shape2" src="assets/Guia do usuário do WebPMO_html_42db4ac4.gif" vspace="9" width="536"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><font size="2" style="font-size: 9pt">Figura
+<span style="background: #c0c0c0">13</span>: Aba dos Volumes Iniciais
+por usina.</font></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Preenchidas
+as informações de todas as usinas, o insumo pode ser diretamente
+enviado (passo 2) ou então pode ser salvo (passo 1) para posterior
+envio (passo 2), como mostra a figura a seguir.</p>
+<p align="center" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="bottom" alt="Picture 14" height="194" hspace="13" loading="lazy" name="Picture 14" src="assets/Guia do usuário do WebPMO_html_a645795b.gif" vspace="9" width="550"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><font size="2" style="font-size: 9pt">Figura
+<span style="background: #c0c0c0">14</span>: Salvando e enviando o
+insumo do Volume Inicial.</font></p>
+<ol>
+<ol>
+<ol start="2">
+<li><h4 id="cronograma-de-manutencao-das-usinas-hidreletricas"><a name="_Toc235475285"></a><a name="_Ref187847842"></a>
+			Cronograma de manutenção das usinas hidrelétricas</h4></li>
+</ol>
+</ol>
+</ol>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">O
+insumo de cronograma de manutenções em usinas hidrelétricas contém
+as manutenções programadas para as unidades geradoras das UHEs
+durante o horizonte do estudo. Tais indisponibilidades das unidades
+geradoras devem estar associadas a SGIs cadastrados no sistema <font color="#0000ff"><u><a href="http://sgi-op.ons.org.br/SGIOPWeb/AgendaIntervencoes">SGI-OP</a></u></font>
+(Sistema de Gestão de Intervenções).</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">A <span style="background: #c0c0c0">Figura 15</span>
+a seguir mostra um exemplo de formulário com cronograma atualizado
+de manutenção em usinas hidrelétricas, com: identificação da
+usina e da unidade geradora com sua potência nominal, número de SGI
+da intervenção, data de início e fim da manutenção, indicação
+do tempo mínimo necessário para retorno da UG, motivo da realização
+da intervenção, sua situação no fluxo de aprovação do SGI-OP e
+indicação se a intervenção é relacionada a equipamentos de
+geração/produção (P), transmissão (T) ou ambos (A).</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in"><img align="bottom" alt="Imagem 1" height="131" hspace="12" loading="lazy" name="Imagem 1" src="assets/Guia do usuário do WebPMO_html_bc4f3917.gif" vspace="8" width="642"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><a name="_Ref184134101"></a>
+<font size="2" style="font-size: 9pt">Figura <span style="background: #c0c0c0">15</span>:
+Insumo do cronograma da manutenção das usinas hidrelétricas</font></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">As
+intervenções aptas a serem consideradas no insumo de cronograma de
+manutenção em hidrelétricas são as:</p>
+<ul>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Com início até o
+	final dos estágios semanais e
+	com término depois do início do período de estudo;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Caracterizadas
+	como <b>“com</b><b> </b><b>desligamento”</b> – as manutenções
+	“sem desligamento” e “para realização de testes” não
+	afetam no cálculo de disponibilidade;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Com status
+	diferente de <b>“cancelada”</b>, <b>“concluída” ou</b>
+<b>“indeferida”</b> e</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">De periodicidade<b>
+	contínua</b> ou <b>diária</b>.</p></li>
+</ul>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Manutenções
+ocorridas a partir do segundo mês de estudo não precisam constar na
+declaração, pois, para o segundo mês, a disponibilidade média das
+usinas é dada por taxas de indisponibilidade forçada (TEIF) e
+programada (TEIP) no <b>Bloco FD</b> (Bloco 20 - Fator de
+disponibilidade de usina hidráulicas). As manutenções declaradas
+iniciadas durante o segundo mês são desconsideradas e as que
+ocorrem no primeiro e segundo meses têm impacto considerado apenas
+no primeiro mês. No final da presente seção, essa questão é
+novamente abordada no detalhamento do Bloco FD.</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Mensalmente,
+após a Reunião Mensal de Manutenção em Unidades Geradoras, que
+ocorre na semana anterior à semana de elaboração do PMO, os
+Agentes de Geração devem compatibilizar as manutenções
+cadastradas no sistema com a Ata da Reunião, documento resultante da
+reunião mensal entre a Equipe de Intervenções Energéticas e os
+Agentes interessados em realizar manutenções em suas máquinas.
+Dessa forma, garante-se a utilização no PMO do cronograma de
+intervenções em unidades geradoras mais atualizado possível.	</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">As
+manutenções aptas a serem representadas no DECOMP são modeladas
+através de taxas de disponibilidade para cada usina em cada estágio,
+levando-se em consideração o período da manutenção da unidade e
+sua respectiva potência indisponível no estágio conforme a
+formulação a seguir para <b>uma usina em um determinado estágio</b>:</p>
+<p align="center" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="absmiddle" alt="Ilustração do Guia do Usuário do WebPMO" loading="lazy" name="Object1" src="assets/Guia do usuário do WebPMO_html_6b474fb9.gif"/>
+</p>
+<p align="left" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+Em que:</p>
+<p align="left" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="absmiddle" alt="Ilustração do Guia do Usuário do WebPMO" loading="lazy" name="Object2" src="assets/Guia do usuário do WebPMO_html_3719f50f.gif"/>
+</p>
+<p align="left" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="absmiddle" alt="Ilustração do Guia do Usuário do WebPMO" loading="lazy" name="Object3" src="assets/Guia do usuário do WebPMO_html_54716766.gif"/>
+</p>
+<p align="left" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="absmiddle" alt="Ilustração do Guia do Usuário do WebPMO" loading="lazy" name="Object4" src="assets/Guia do usuário do WebPMO_html_d3ac980f.gif"/>
+:
+Potência efetiva da unidade geradora</p>
+<p align="left" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="absmiddle" alt="Ilustração do Guia do Usuário do WebPMO" loading="lazy" name="Object5" src="assets/Guia do usuário do WebPMO_html_f7bc1534.gif"/>
+:
+Tempo (em horas e minutos) que a unidade geradora ficou indisponível
+por conta das intervenções, ou seja, tempo decorrido fora de
+operação no estágio</p>
+<p align="left" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="absmiddle" alt="Ilustração do Guia do Usuário do WebPMO" loading="lazy" name="Object6" src="assets/Guia do usuário do WebPMO_html_4de4a098.gif"/>
+:
+Total de tempo do estágio (em horas e minutos)</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">As
+taxas de disponibilidade média calculadas são informadas no Bloco
+MP (Bloco 18 - Manutenções Hidráulicas Programadas) do arquivo
+<i>dadger</i>, conforme ilustrado no quadro a seguir. Ressaltamos que
+o valor padrão de 1.000 será sempre aplicado nas semanas em que não
+foi declarada manutenção, indicando disponibilidade total da usina.</p>
+<p align="center" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="bottom" alt="Imagem 1" height="226" hspace="9" loading="lazy" name="Imagem 1" src="assets/Guia do usuário do WebPMO_html_56891a5.gif" vspace="10" width="302"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><a name="_Ref187254523"></a>
+<font size="2" style="font-size: 9pt">Figura <span style="background: #c0c0c0">16</span>:
+Representação no arquivo <i>dadger</i> do Bloco MP</font></p>
+<p align="center" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="bottom" alt="Ilustração do Guia do Usuário do WebPMO" border="0" height="200" loading="lazy" name="Image7" src="assets/Guia do usuário do WebPMO_html_c41fe830.png" width="293"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><a name="_Ref236664275"></a>
+<font size="2" style="font-size: 9pt">Figura <span style="background: #c0c0c0">17</span>:
+Representação no arquivo <i>dadger</i> do Bloco MP</font></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in"><br/>
+<br/>
+</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">A
+representação das colunas é dada por:</p>
+<ul>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 1-2:
+	Identificação do registro: MP;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 5-7: Número
+	da usina conforme campo 2 dos registros UH;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 8-9: Caso a
+	usina do campo 2 seja Itaipu e o registro RI estiver ativo, o campo
+	3 pode conter a informação do conjunto onde será aplicada
+	manutenção, 50 - manutenção aplicada no conjunto 50Hz e 60 -
+	manutenção aplicada no conjunto 60Hz e</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 10-94:
+	Fatores de disponibilidade da usina para os N estágios.</p></li>
+</ul>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Para
+demonstrar a forma de cálculo, pode ser tomado um exemplo para a UHE
+Salto Grande (usina 50, capacidade de 73,8 MW) levando-se em conta o
+PMO de Agosto de 2024. A usina apresentava uma manutenção
+programada para uma UG de 18,45 MW de 26/08/2024 às 07:30 até
+30/08/2024 as 17:00. Dessa forma, o estágio que será afetado neste
+caso é o S5 (24/08/2024 a 30/08/2024), por isso o valor a ser
+calculado para esta manutenção ficará nas colunas 30-35 do Bloco
+MP. </p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">A
+partir da formulação apresentada anteriormente, o fator de
+disponibilidade será 0,857 para o estágio S5, como observado na
+representação do arquivo <i>dadger</i> da <span style="background: #c0c0c0">Figura 16</span>.
+Os demais estágios permanecem como 1.000, haja vista que não foram
+informadas manutenções para as outras datas do período. O
+detalhamento do exemplo, com a memória de cálculo para se chegar ao
+valor de 0,857 pode ser consultada no <span style="background: #c0c0c0">Anexo I.1</span>.</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Para
+demonstrar a forma de cálculo, pode ser tomado um exemplo para a UHE
+Jayme Canet (usina 57, capacidade de 352,08 MW) levando-se em conta o
+PMO de Agosto de 2026. A usina apresentava uma manutenção
+programada para uma UG de 117,36 MW de 27/08/2026 às 08:00 até
+28/08/2026 as 17:00, conforme pode ser observado na <span style="background: #c0c0c0">Figura 18</span>.
+Dessa forma, o estágio que será afetado neste caso é o S4
+(22/08/2026 a 28/08/2026), por isso o valor a ser calculado para esta
+manutenção ficará nas colunas 25-30 do Bloco MP.</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in; page-break-after: avoid">
+<img align="bottom" alt="Ilustração do Guia do Usuário do WebPMO" border="0" height="266" loading="lazy" name="Image8" src="assets/Guia do usuário do WebPMO_html_62129f8a.png" width="642"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><a name="_Ref236664238"></a>
+<font size="2" style="font-size: 9pt">Figura <span style="background: #c0c0c0">18</span>
+- Representação de manutenção declarada no "Cronograma de
+Manutenção Hidrelétricas"</font></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">A
+partir da formulação apresentada anteriormente, o fator de
+disponibilidade será 0,935 para o estágio S4, como observado na
+representação do arquivo <i>dadger</i> da <span style="background: #c0c0c0">Figura 17</span>.
+Os demais estágios permanecem como 1.000, haja vista que não foram
+informadas manutenções para as outras datas do período. O
+detalhamento do exemplo, com a memória de cálculo para se chegar ao
+valor de 0,935 pode ser consultada no <span style="background: #c0c0c0">Anexo I.1</span>.</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Para o
+estágio mensal, última coluna dos N estágios do bloco, é
+atribuída sempre disponibilidade plena (1.000) no bloco MP, pois sua
+representação é feita no Bloco FD, de acordo com a metodologia
+vigente do PMO.</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">O
+cálculo do fator de disponibilidade do Bloco FD leva em conta as
+TEIF e IP calculadas para cada usina com base em seu histórico de
+indisponibilidades nos últimos 12 meses. Tais valores constam em
+cadastro de usinas no arquivo <i>hidr.dat</i> e são atualizados
+anualmente, no PMO de Maio. Sua fórmula de cálculo é dada por 
+<img align="absmiddle" alt="Ilustração do Guia do Usuário do WebPMO" loading="lazy" name="Object7" src="assets/Guia do usuário do WebPMO_html_3335e312.gif"/>
+.</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">A
+seguir um extrato do bloco FD no arquivo <i>dadger</i>.</p>
+<p align="center" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="bottom" alt="Shape3" height="144" hspace="9" loading="lazy" name="Shape3" src="assets/Guia do usuário do WebPMO_html_7f423991.gif" vspace="10" width="302"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><font size="2" style="font-size: 9pt">Figura
+<span style="background: #c0c0c0">1917</span>: Representação no
+arquivo <i>dadger</i> do Bloco FD</font></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">A
+representação das colunas é dada por:</p>
+<ul>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 1-2:
+	Identificação do registro: FD;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 5-7: Número
+	da usina conforme campo 2 dos registros UH;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 8-9: Caso a
+	usina do campo 2 seja Itaipu e o registro RI estiver ativo, o campo
+	3 pode conter a informação do conjunto onde será aplicada a
+	disponibilidade;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 10-94:
+	Fatores de disponibilidade da usina para os N estágios.</p></li>
+</ul>
+<ol>
+<ol>
+<ol>
+<ol>
+<ul>
+<li><h4 id="envio-do-cronograma-manutencao-hidreletrica-no-webpmo">Envio do Cronograma
+					Manutenção Hidrelétrica no WebPMO</h4></li>
+</ul>
+</ol>
+</ol>
+</ol>
+</ol>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in"><u>Semanas
+de PMO</u></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Nas
+semanas de elaboração do PMO, o insumo "Cronograma de
+Manutenção Hidrelétrica" será automaticamente capturado pelo
+sistema na segunda-feira às 09h, no momento da abertura da coleta,
+permanecendo indisponível para edição manual pelo Agente. Às 16h
+do mesmo dia, o sistema realizará a consulta automática ao SGI-OP,
+identificará as intervenções aplicáveis ao estudo, preencherá o
+insumo e efetuará sua aprovação automática.</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Após
+essa atualização, o usuário deverá acessar o WebPMO e verificar
+as informações consideradas no insumo. Para a consulta, o usuário
+deverá selecionar o insumo “Cronograma Manutenção Hidrelétricas”
+(passo 1), clicar em Pesquisar (passo 2) e clicar com o botão
+direito do mouse no nome do Agente (passo 3), para visualizar as
+manutenções preenchidas pelo sistema.</p>
+<p align="center" class="western" lang="pt-BR" style="margin-bottom: 0.17in; page-break-after: avoid">
+<img align="bottom" alt="Ilustração do Guia do Usuário do WebPMO" border="0" height="160" loading="lazy" name="Imagem 11" src="assets/Guia do usuário do WebPMO_html_23979e4.png" width="679"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><a name="_Ref236660263"></a><a name="_Ref236660272"></a>
+<font size="2" style="font-size: 9pt">Figura <span style="background: #c0c0c0">20</span>
+- Exemplo de consulta do insumo "Cronograma Manutenção
+Hidrelétricas"</font></p>
+<p align="center" class="western" lang="pt-BR" style="margin-bottom: 0.17in; page-break-after: avoid">
+<img align="bottom" alt="Ilustração do Guia do Usuário do WebPMO" border="0" height="292" loading="lazy" name="Image9" src="assets/Guia do usuário do WebPMO_html_8e042fe0.png" width="642"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><a name="_Ref236660278"></a>
+<font size="2" style="font-size: 9pt">Figura <span style="background: #c0c0c0">21</span>
+- Aba com as manutenções extraídas do SGI-OP para consulta</font></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Caso
+identifique divergência ou necessidade de atualização, o usuário
+deverá priorizar a correção diretamente pelo SGI-OP, de forma que
+a informação atualizada esteja disponível para a nova consulta
+automática do sistema.</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Na
+quarta-feira, às 16h, o WebPMO realizará uma nova consulta ao
+SGI-OP, atualizando o insumo com as informações mais recentes e
+efetuando novamente sua aprovação automática.</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Após
+essa segunda atualização, o usuário deverá consultar as
+informações preenchidas novamente, conforme a <span style="background: #c0c0c0">Figura 18</span>
+e a <span style="background: #c0c0c0">Figura 19</span>. Caso
+permaneça alguma necessidade de ajuste excepcional, o usuário
+deverá entrar em contato com a Equipe do PMO para avaliação e
+tratamento do caso.</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in"><br/>
+<br/>
+</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in"><u>Semanas
+de Revisão do PMO</u></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Nas
+semanas de Revisão do PMO, o insumo "Cronograma de Manutenção
+Hidrelétrica" será automaticamente capturado pelo sistema na
+quarta-feira às 09h, no momento da abertura da coleta, permanecendo
+indisponível para edição manual pelo Agente. Às 11h de
+quinta-feira, o sistema realizará a consulta automática ao SGI-OP,
+identificará as intervenções aplicáveis e efetuará o
+preenchimento e a aprovação automática do insumo.</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Após a
+atualização, o usuário deverá acessar o WebPMO para conferir as
+informações consideradas no insumo. Para a consulta, o usuário
+deverá seguir os mesmos passos citados através da <span style="background: #c0c0c0">Figura 18</span>
+e da <span style="background: #c0c0c0">Figura 19</span>.</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Caso
+seja identificado algum ajuste necessário após o processamento
+automático, o usuário deverá entrar em contato com a Equipe do PMO
+para avaliação e tratamento do caso.</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in"><br/>
+<br/>
+</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Em
+situações excepcionais, tanto em semanas de PMO quanto em semanas
+de Revisão, a Equipe do PMO poderá autorizar alterações manuais
+no insumo.</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Nesses
+casos, o Agente deverá selecionar o insumo “Cronograma Manutenção
+Hidrelétricas” (passo 1), clicar em Pesquisar (passo 2),
+selecionar o Agente no marcador (passo 3) e depois clicar em Informar
+(passo 4).</p>
+<p align="center" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="bottom" alt="Ilustração do Guia do Usuário do WebPMO" border="0" height="142" loading="lazy" name="Image10" src="assets/Guia do usuário do WebPMO_html_810463ee.gif" width="586"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><font size="2" style="font-size: 9pt">Figura
+<span style="background: #c0c0c0">22</span>: Exemplo de envio do
+Cronograma Manutenção Hidrelética</font></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Após
+acessar o formulário, o usuário deverá clicar em “Obter
+Manutenções, que apresentará todas as intervenções cadastradas
+no SGI-OP para as usinas de sua responsabilidade. O usuário deverá
+selecionar (passo 1) todas aquelas que se enquadram para o cálculo
+de disponibilidade como descrito neste capítulo. 
+</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Após a
+seleção das intervenções, as informações podem ser salvas
+(passo 2).</p>
+<p align="center" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="bottom" alt="Imagem 20" height="106" hspace="14" loading="lazy" name="Imagem 20" src="assets/Guia do usuário do WebPMO_html_6beeee61.gif" vspace="8" width="563"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><font size="2" style="font-size: 9pt">Figura
+<span style="background: #c0c0c0">23</span>: Aba do Cronograma
+Manutenções a ser enviado</font></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Após
+salvar as informações, o insumo deve ser enviado.</p>
+<p align="center" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="bottom" alt="Imagem 3" height="182" hspace="12" loading="lazy" name="Imagem 3" src="assets/Guia do usuário do WebPMO_html_5b30add9.gif" vspace="9" width="484"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><font size="2" style="font-size: 9pt">Figura
+<span style="background: #c0c0c0">24</span>: Aba do envio do
+Cronograma Manutenções</font></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Após o
+envio, caso ainda haja algum problema com o insumo enviado, como um
+SGI indeferido após a declaração ou incompatibilidade com a Ata de
+Manutenção, a equipe do PMO entrará em contato com o usuário para
+validar o que foi declarado.</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in"><br/>
+<br/>
+</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in"><br/>
+<br/>
+</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Dentro
+do WebPMO, o Agente deverá selecionar o insumo “Cronograma
+Manutenção Hidrelétricas” (passo 1), clicar em pesquisar (passo
+2), selecionar o Agente no marcador (passo 3) e depois clicar em
+informar (passo 4).</p>
+<p align="center" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="bottom" alt="Ilustração do Guia do Usuário do WebPMO" border="0" height="142" loading="lazy" name="Image11" src="assets/Guia do usuário do WebPMO_html_810463ee.gif" width="586"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><font size="2" style="font-size: 9pt">Figura
+<span style="background: #c0c0c0">2518</span>: Exemplo de envio do
+Cronograma Manutenção Hidroelética</font></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Após
+clicar em informar, o usuário deverá clicar em “Obter
+Manutenções” para ver todas as manutenções que estão
+cadastradas no sistema SGI-OP para as suas usinas e, então, deverá
+selecionar (passo 1) todas aquelas que se enquadram para o cálculo
+de disponibilidade como descrito neste capítulo. Recomenda-se que o
+Agente selecione todas as intervenções que aparecem na aba, pois já
+há um filtro entre todas as intervenções cadastradas no SGI-OP e
+as aptas a serem declaradas via WebPMO. Caso haja algum problema com
+o insumo enviado, como um SGI indeferido após a declaração ou
+incompatibilidade com a Ata de Manutenção, a equipe do PMO entrará
+em contato com o usuário para validar o que foi declarado. Após a
+seleção das intervenções, as informações podem ser salvas
+(passo 2).</p>
+<p align="center" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="bottom" alt="Imagem 20" height="106" hspace="14" loading="lazy" name="Imagem 20" src="assets/Guia do usuário do WebPMO_html_6beeee61.gif" vspace="8" width="563"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><font size="2" style="font-size: 9pt">Figura
+<span style="background: #c0c0c0">2619</span>: Aba do Cronograma
+Manutenções a ser enviado</font></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Após
+salvar as informações, o insumo deve ser enviado. Caso não haja
+nenhuma manutenção programada para suas usinas, o agente, ainda
+sim, deve enviar o formulário vazio para aprovação do ONS.</p>
+<p align="center" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="bottom" alt="Imagem 3" height="182" hspace="12" loading="lazy" name="Imagem 3" src="assets/Guia do usuário do WebPMO_html_5b30add9.gif" vspace="9" width="484"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><font size="2" style="font-size: 9pt">Figura
+<span style="background: #c0c0c0">2720</span>: Aba do envio do
+Cronograma Manutenções</font></p>
+<ol>
+<ol>
+<ol start="3">
+<li><h4 id="restricoes-eletricas-conjunturais-das-usinas-hidroeletricas"><a name="_Toc235475286"></a>Restrições
+			elétricas conjunturais das usinas hidroelétricas</h4></li>
+</ol>
+</ol>
+</ol>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Para
+representar limitações operacionais de usinas e limites de
+intercâmbio, utiliza-se o Bloco RE de restrições elétricas no
+modelo DECOMP. Como exemplos dessas limitações para a geração de
+usinas, cita-se a geração mínima para se evitar cavitação /
+vibração excessiva e a geração máxima por conta de alguma
+restrição temporária não cadastrada em SGI. No caso de fluxos de
+intercâmbio, os limites estruturais e conjunturais de transferência
+de energia entre os subsistemas também são representados no Bloco
+RE.</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Essas
+restrições são representadas por inequações:</p>
+<p align="center" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="absmiddle" alt="Ilustração do Guia do Usuário do WebPMO" loading="lazy" name="Object8" src="assets/Guia do usuário do WebPMO_html_b32661d2.gif"/>
+</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Onde 
+<img align="absmiddle" alt="Ilustração do Guia do Usuário do WebPMO" loading="lazy" name="Object9" src="assets/Guia do usuário do WebPMO_html_1ed9fce4.gif"/>
+
+é o limite inferior, 
+<img align="absmiddle" alt="Ilustração do Guia do Usuário do WebPMO" loading="lazy" name="Object10" src="assets/Guia do usuário do WebPMO_html_ae33f802.gif"/>
+
+é o limite superior e 
+<img align="absmiddle" alt="Ilustração do Guia do Usuário do WebPMO" loading="lazy" name="Object11" src="assets/Guia do usuário do WebPMO_html_8407231f.gif"/>
+
+é a geração de energia da usina no estágio T.</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">A
+formulação destas inequações permite impor limites sobre a
+geração das usinas hidráulicas, indicando faixas operativas
+referentes a condições conjunturais</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">No
+WebPMO, conforme será visto mais adiante, estes limites devem ser
+fornecidos em “MWmed” por estágio e patamar de carga (pesada,
+média e leve), conforme ilustrado no exemplo de coleta a seguir.</p>
+<p align="center" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="bottom" alt="Imagem 1056845580" height="112" hspace="12" loading="lazy" name="Imagem 1056845580" src="assets/Guia do usuário do WebPMO_html_97e59e9d.gif" vspace="8" width="642"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.17in"><font size="2" style="font-size: 9pt">Figura
+</font><font size="2" style="font-size: 9pt"><span style="background: #c0c0c0">2821</span></font><font size="2" style="font-size: 9pt">:
+Exemplo de coleta para uma restrição para geração mínima e
+máxima de uma usina hidrelétrica</font></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Neste
+exemplo, pode-se observar que a UHE Serra do Facão tem uma restrição
+de geração mínima de 47 MWmed e máxima de 212 MWmed para todos os
+patamares de carga e em todos os estágios operativos, devido à
+previsão de altura de queda. Destaca-se que é importante que o
+Agente justifique os limites no campo “Causa”. 
+</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Estas
+informações compõem o Bloco RE (Bloco 23 – Restrições
+Elétricas). As restrições elétricas são introduzidas por meio
+dos registros RE, LU e FU, sempre considerando na descrição dos
+dados, o patamar 1 para carga pesada, o patamar 2 para carga média e
+o patamar 3 para carga leve. O quadro a seguir ilustra a descrição
+da restrição coletada neste exemplo.</p>
+<p align="center" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="bottom" alt="Ilustração do Guia do Usuário do WebPMO" border="0" height="163" loading="lazy" name="Imagem 1836483289" src="assets/Guia do usuário do WebPMO_html_8f79fd82.png" width="642"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><font size="2" style="font-size: 9pt">Figura
+<span style="background: #c0c0c0">2922</span>: Representação da
+restrição elétrica no arquivo <i>dadger</i></font></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">A
+representação das colunas do registro RE é dada por:</p>
+<ul>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 1-2:
+	Identificação do registro: RE;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 5-8: Número
+	de identificação da restrição elétrica;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 10-11:
+	Estágio inicial da restrição;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 15-16:
+	Estágio final da restrição.</p></li>
+</ul>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">A
+representação das colunas do registro LU é dada por:</p>
+<ul>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 1-2:
+	Identificação do registro: LU;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 5-8: Número
+	da restrição elétrica conforme campo 2 do registro RE;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 10-11:
+	Número do estágio, em ordem crescente;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 15-24:
+	Limite inferior em MWmed para o patamar 1;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 25-34:
+	Limite superior em MWmed para o patamar 1;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">E assim segue para
+	os demais patamares.</p></li>
+</ul>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">A
+representação das colunas do registro FU é dada por:</p>
+<ul>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 1-2:
+	Identificação do registro: FU;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 5-8: Número
+	de identificação da restrição elétrica conforme campo 2 do
+	registro RE;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 10-11:
+	Número do estágio em ordem crescente;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 15-17:
+	Número da usina hidráulica conforme campo 2 dos registros UH;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 20-29:
+	Fator de participação da usina;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 31-32: 50
+	ou 60 se a restrição for referente a Itaipu.</p></li>
+</ul>
+<ol>
+<ol>
+<ol>
+<ol>
+<ul>
+<li><h4 id="envio-das-restricoes-eletricas-conjunturais-no-webpmo">Envio das restrições
+					elétricas conjunturais no WebPMO</h4></li>
+</ul>
+</ol>
+</ol>
+</ol>
+</ol>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in"><font color="#000000">Dentro
+do WebPMO, o Agente deverá selecionar o insumo “Restrições
+Elétricas Conjunturais Hidroelétricas” (passo 1) e então clicar
+em “Pesquisar” (passo 2). Selecionar o Agente no marcador (passo
+3) e depois ir em informar (passo 4).</font></p>
+<p align="center" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="bottom" alt="Ilustração do Guia do Usuário do WebPMO" border="0" height="122" loading="lazy" name="Image12" src="assets/Guia do usuário do WebPMO_html_1714880f.gif" width="554"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><font size="2" style="font-size: 9pt">Figura
+<span style="background: #c0c0c0">3023</span>: Exemplo de envio das
+Restrições Elétricas Conjunturais Hidroelétricas</font></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in"><font color="#000000">Em
+seguida, o usuário será encaminhado para a tela abaixo, contendo
+todas as usinas do Agente. Caso as restrições elétricas sejam
+iguais às da semana anterior, o usuário poderá recuperar a
+informação enviada (passo 1 da tela a seguir). Esta funcionalidade
+só poderá ser usada em revisões, uma vez que em semanas de PMO há
+novas semanas a preencher. Caso o Agente queira inserir manualmente
+ou caso as informações não sejam iguais às anteriores, o usuário
+poderá preencher as informações seguindo as especificações
+descritas neste capítulo e então salvar o formulário (passo 2) e
+depois enviar o dado para análise (passo 3).</font></p>
+<p align="center" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="bottom" alt="Imagem 20" height="176" hspace="12" loading="lazy" name="Imagem 20" src="assets/Guia do usuário do WebPMO_html_d708d3b6.gif" vspace="10" width="456"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><font size="2" style="font-size: 9pt">Figura
+<span style="background: #c0c0c0">3124</span>: Aba das Restrições
+Elétricas Conjunturais Hidroelétricas a ser enviado</font></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in"><br/>
+<br/>
+</p>
+<ol>
+<ol start="2">
+<li><h3 id="usinas-termeletricas"><a name="_Toc235475287"></a>Usinas
+		termelétricas</h3>
+<ol>
+<li><h4 id="cronograma-de-manutencao-das-usinas-termicas"><a name="_Toc235475288"></a>Cronograma
+			de manutenção das usinas térmicas</h4></li>
+</ol>
+</li></ol>
+</ol>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">As
+informações do cronograma de manutenção das usinas térmicas são
+utilizadas como insumo para<b> </b>as declarações de<b>
+disponibilidade de geração de usinas termelétricas,</b> uma vez
+que as disponibilidades declaradas já devem considerar todas as
+restrições operativas e todas as manutenções previstas para o
+período (este tópico será abordado na seção <span style="background: #c0c0c0">4.2.2</span>
+).</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Diferentemente
+do insumo de Cronograma de Manutenção em Usinas Hidrelétricas,
+para este insumo das Usinas Térmicas deverão ser informadas <u>todas</u>
+as manutenções caracterizadas como “<b>com desligamento</b>”
+para todo o horizonte de estudo<b>. </b>As demais manutenções (SGIs
+“sem desligamento” ou “para realização de testes”, por
+exemplo) que restrinjam a operação de uma unidade geradora devem
+ser informadas no campo de comentários do insumo da disponibilidade.</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Os
+campos das grandezas coletadas estão ilustrados a seguir.</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in"><img align="bottom" alt="Imagem 1" height="90" hspace="12" loading="lazy" name="Imagem 1" src="assets/Guia do usuário do WebPMO_html_dfc5224b.gif" vspace="8" width="642"/>
+<img align="left" alt="Shape4" height="15" hspace="1" loading="lazy" name="Shape4" src="assets/Guia do usuário do WebPMO_html_f8c7db1e.gif" vspace="1" width="59"/>
+<img align="left" alt="Shape5" height="16" hspace="1" loading="lazy" name="Shape5" src="assets/Guia do usuário do WebPMO_html_e45bdaae.gif" vspace="1" width="59"/>
+<img align="left" alt="Shape6" height="11" hspace="1" loading="lazy" name="Shape6" src="assets/Guia do usuário do WebPMO_html_914b2808.gif" vspace="1" width="43"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><font size="2" style="font-size: 9pt">Figura
+<span style="background: #c0c0c0">3225</span>: Insumo do cronograma
+da manutenção das usinas termelétricas</font></p>
+<p lang="pt-BR" style="margin-bottom: 0.17in; margin-left: 0.5in"><br/>
+<br/>
+</p>
+<ol>
+<ol>
+<ol>
+<ol>
+<ul>
+<li><h4 id="envio-do-cronograma-manutencao-termica-no-webpmo">Envio do Cronograma
+					Manutenção Térmica no WebPMO</h4></li>
+</ul>
+</ol>
+</ol>
+</ol>
+</ol>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Dentro
+do WebPMO, o Agente deverá selecionar o insumo “Cronograma
+Manutenção Térmica” (passo 1), e então ir em pesquisar (passo
+2). Selecionar o Agente no marcador (passo 3) e depois ir em informar
+(passo 4).</p>
+<p align="center" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="bottom" alt="Ilustração do Guia do Usuário do WebPMO" border="0" height="133" loading="lazy" name="Image13" src="assets/Guia do usuário do WebPMO_html_e577c9fc.gif" width="586"/>
+<img align="left" alt="Shape7" height="5" hspace="1" loading="lazy" name="Shape7" src="assets/Guia do usuário do WebPMO_html_12e20969.gif" vspace="1" width="59"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><font size="2" style="font-size: 9pt">Figura
+<span style="background: #c0c0c0">3326</span>: Exemplo de envio do
+Cronograma Manutenção Térmica</font></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Após,
+clicar em informar, o usuário poderá ver todas as manutenções que
+estão cadastradas no sistema SGI-OP de posse deste Agente e, então,
+deverá selecionar (passo 1) todas aquelas que se enquadram para o
+cálculo de disponibilidade como descrito neste capítulo
+(recomenda-se que o Agente selecione todas as manutenções desta
+aba). Após a seleção, as informações devem ser salvas (passo 2).</p>
+<p align="center" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="bottom" alt="Ilustração do Guia do Usuário do WebPMO" border="0" height="151" loading="lazy" name="Imagem 20" src="assets/Guia do usuário do WebPMO_html_51de5b4b.gif" width="509"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><font size="2" style="font-size: 9pt">Figura
+<span style="background: #c0c0c0">3427</span>: Aba do Cronograma
+Manutenções a ser enviado</font></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Selecionado
+e salvado as informações, o insumo deve ser enviado.</p>
+<p align="center" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="bottom" alt="Ilustração do Guia do Usuário do WebPMO" border="0" height="174" loading="lazy" name="Imagem 3" src="assets/Guia do usuário do WebPMO_html_480c3dbf.gif" width="514"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><font size="2" style="font-size: 9pt">Figura
+<span style="background: #c0c0c0">3528</span>: Aba do envio do
+Cronograma Manutenções</font></p>
+<ol>
+<ol>
+<ol start="2">
+<li><h4 id="disponibilidade-inflexibilidade-e-custo-de-usinas-termicas"><a name="_Toc235475289"></a><a name="_Hlk187843662"></a><a name="_Ref187750215"></a><a name="_Ref188468475"></a>
+			Disponibilidade, Inflexibilidade e Custo de Usinas Térmicas</h4></li>
+</ol>
+</ol>
+</ol>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">A
+disponibilidade de geração de usinas termelétricas é valor máximo
+que a usina pode gerar efetivamente, e, para este cálculo, devem ser
+levadas em consideração:</p>
+<ul>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">O <b>fator de
+	capacidade</b>;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">As <b>manutenções</b>
+	previstas para o período do estudo;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">As <b>restrições
+	operativas</b>;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">A <b>rampa</b> de
+	subida de acionamento da usina geradora (opcional).</p></li>
+</ul>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">O valor
+da <b>disponibilidade</b> deve ser fornecido para cada <b>estágio</b>
+e por <b>patamar de carga </b>em <b>MWmed</b>, ou seja, o cálculo
+patamarizado leva em conta a duração horária das
+indisponibilidades e sua relação com intervalos de cada patamar
+para cada semana e mês do período do PMO e suas revisões, conforme
+referência anual disponibilizada no SINtegre, no produto <font color="#0000ff"><u><a href="https://sintegre.ons.org.br/sites/9/47/paginas/servicos/historico-de-produtos.aspx?produto=Intervalos%20dos%20Patamares%20de%20Carga">Intervalo
+dos Patamares de Carga</a></u></font> [6].</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Nesse
+sentido, é importante destacar que os intervalos dos patamares de
+determinado ano começam a ser utilizados a partir do PMO de Janeiro,
+de forma que não haja duas referências de intervalos de patamar de
+carga em um mesmo estudo. Por exemplo: no PMO de Dezembro de 2024 é
+utilizada a referência de 2024 para os dois meses de estudo,
+enquanto que, para o PMO de Janeiro de 2025, é utilizada apenas a
+referência de 2025 para todo o horizonte (mesmo para os dias de
+2024).</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">A
+<b>inflexibilidade</b> reflete o valor de geração inflexível
+(mínima) de determinada usina termelétrica, declarado pelo agente
+proprietário para atender requisitos deste. Os valores devem ser
+fornecidos em <b>MWmed</b> para cada<b> patamar de carga</b> e cada
+<b>estágio</b>.</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">O Custo
+Variável Unitário - <b>CVU</b> de geração representa o custo
+associado à produção de uma unidade de energia elétrica em
+determinada usina termelétrica. Atualmente, este valor é único
+para todos os patamares de carga do período de estudo e deve ser
+fornecido em R$/MWh. É importante ressaltar que <b>sua declaração
+no WebPMO é opcional e, caso o campo esteja em branco, o ONS
+utilizará o CVU regulado como dado de entrada no modelo.</b> Caso
+seja de interesse do Agente, pode ser declarado no WebPMO um CVU
+menor do que o regulado, conforme previsto pelo §1º do Art.10 da
+Resolução Normativa ANEEL Nº 1.032/2022 [1], com duração mínima
+de um estágio e máxima até o último estágio semanal. Para o
+segundo mês de estudo, é feita a compatibilização com o modelo de
+médio prazo, utilizando-se o CVU regulado. Para mais informações
+sobre o assunto, <font color="#0000ff"><u><a href="https://sintegre.ons.org.br/Paginas/servicos/noticiasdetalhe.aspx?noticiaId=6538&amp;url">acessar
+a notícia publicada pela Programação Mensal da Operação
+Energética no SINtegre</a></u></font>.  
+</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Adicionalmente,
+ao final do formulário do insumo no WebPMO, há um campo para
+comentários, em que devem ser informados os motivos para a
+declaração de disponibilidade inferior à capacidade máxima da
+usina em casos que não envolvem manutenções declaradas no insumo
+Cronograma de Manutenção em Usinas Térmicas. Neste campo, também
+pode ser reforçada a intenção de declarar um CVU inferior ao
+regulado ou justificar determinada inflexibilidade declarada.</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">A
+figura abaixo traz um exemplo de formulário preenchido para o insumo
+“Disponibilidade, Inflexibilidade e Custo de Usinas Térmicas”.</p>
+<p align="center" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="bottom" alt="Shape8" height="135" hspace="12" loading="lazy" name="Shape8" src="assets/Guia do usuário do WebPMO_html_2d05136.gif" vspace="10" width="642"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><a name="_Ref187772626"></a>
+<font size="2" style="font-size: 9pt">Figura <span style="background: #c0c0c0">3629</span>:
+Insumo de Disponibilidade, Inflexibilidade e Custo das Usinas
+Térmicas</font></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">As
+informações de usinas termelétricas informadas no WebPMO compõem
+o Bloco CT (Bloco 4 – Cadastro UTE), do arquivo <i>dadger</i>,
+conforme ilustrado no quadro a seguir. 
+</p>
+<p align="center" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="bottom" alt="Ilustração do Guia do Usuário do WebPMO" border="0" height="280" loading="lazy" name="Imagem 5" src="assets/Guia do usuário do WebPMO_html_9e1a7f39.png" width="536"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><font size="2" style="font-size: 9pt">Figura
+<span style="background: #c0c0c0">3730</span>: Representação no
+arquivo <i>dadger</i> do bloco CT</font></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">A
+representação das colunas é dada por:</p>
+<ul>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 1-2:
+	Identificação do registro: CT;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 5-7: Número
+	da usina termelétrica;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 10-11:
+	Índice do subsistema ao qual pertence a usina;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 15-24: Nome
+	da usina termelétrica;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 25-26:
+	Índice do estágio;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 30-34:
+	Geração mínima fixa da usina, em MWmed, no patamar 1;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 35-39:
+	Capacidade de geração da usina, em MWmed, no patamar 1;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 40-49:
+	Custo de geração da usina termelétrica, em $/MWh, no patamar 1;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">E assim
+	sucessivamente para os demais patamares.</p></li>
+</ul>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">No
+exemplo acima, do Bloco CT, a UTE Barra Bonita (usina 254) apresenta
+inflexibilidade de 3,7 MWmed, disponibilidade de 9,39 MWmed e CVU de
+742,99 R$/MWh para todos os patamares de carga, conforme visto também
+na declaração do WebPMO na <span style="background: #c0c0c0">Figura 29</span>.
+Como os valores declarados se repetem em todos os estágios, apenas o
+registro do primeiro estágio é escrito no Bloco CT, com a repetição
+para os demais ficando subentendida pelo modelo. No caso da UTE
+Maracanaú (usina 57), há um registro para o estágio 1 e outro para
+o estágio 2, que permanece para os demais estágios do estudo.</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Para
+auxiliar no cálculo dos dados de grandezas patamarizadas do DECOMP,
+e consequentemente no preenchimento de insumos no WebPMO, como o
+formulário de Disponibilidade, Inflexibilidade e CVU, a equipe do
+PMO disponibiliza anualmente uma planilha que pode ser usada como
+base, disponível no produto do SINtegre de “<font color="#0000ff"><u><a href="https://sintegre.ons.org.br/sites/9/52/paginas/servicos/historico-de-produtos.aspx?produto=Ferramentas%20Auxiliares%20para%20o%20PMO">Ferramentas
+Auxiliares para o PMO</a></u></font>” [7]. Neste produto, há uma
+planilha “CargaPatamar” que apresenta a distribuição horária
+dos patamares de carga para todos os dias do ano, mostrada em maiores
+detalhes na seção <span style="background: #c0c0c0">Anexo I.2</span>.</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">A
+seguir, é trazido um exemplo de cálculo de disponibilidade para uma
+usina fictícia com as seguintes características:</p>
+<ul>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Capacidade
+	instalada: <b>100 MW</b></p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Unidades
+	geradoras: <b>4 x 25 MW</b></p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Fator de
+	capacidade: <b>97%</b>
+</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Restrições
+	operativas: <b>nenhuma</b></p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Manutenções: 
+	</p></li>
+</ul>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in; page-break-after: avoid">
+<font size="2" style="font-size: 9pt">Tabela <span style="background: #c0c0c0">3</span>
+- Lista de manutenções na usina termelétrica fictícia</font></p>
+<table cellpadding="7" cellspacing="0" width="100%">
+<col width="36*"/>
+<col width="40*"/>
+<col width="48*"/>
+<col width="39*"/>
+<col width="36*"/>
+<col width="36*"/>
+<col width="22*"/>
+<tr valign="top">
+<td bgcolor="#00b050" style="background: #00b050; border: 1px solid #9bbb59; padding: 0in 0.08in" width="14%"><p align="center" class="western" lang="pt-BR" style="orphans: 2; widows: 2">
+<font size="3" style="font-size: 12pt"><b><font color="#ffffff"><font size="2" style="font-size: 9pt">Início</font></font></b></font></p>
+</td>
+<td bgcolor="#00b050" style="background: #00b050; border: 1px solid #9bbb59; padding: 0in 0.08in" width="15%"><p align="center" class="western" lang="pt-BR" style="widows: 2; orphans: 2">
+<font size="3" style="font-size: 12pt"><b><font color="#ffffff"><font size="2" style="font-size: 9pt">Fim</font></font></b></font></p>
+</td>
+<td bgcolor="#00b050" style="background: #00b050; border: 1px solid #9bbb59; padding: 0in 0.08in" width="19%"><p align="center" class="western" lang="pt-BR" style="widows: 2; orphans: 2">
+<font size="3" style="font-size: 12pt"><b><font color="#ffffff"><font size="2" style="font-size: 9pt">Equipamento</font></font></b></font></p>
+</td>
+<td bgcolor="#00b050" style="background: #00b050; border: 1px solid #9bbb59; padding: 0in 0.08in" width="15%"><p align="center" class="western" lang="pt-BR" style="widows: 2; orphans: 2">
+<font size="3" style="font-size: 12pt"><b><font color="#ffffff"><font size="2" style="font-size: 9pt">Caracterização</font></font></b></font></p>
+</td>
+<td bgcolor="#00b050" style="background: #00b050; border: 1px solid #9bbb59; padding: 0in 0.08in" width="14%"><p align="center" class="western" lang="pt-BR" style="widows: 2; orphans: 2">
+<font size="3" style="font-size: 12pt"><b><font color="#ffffff"><font size="2" style="font-size: 9pt">Restrição</font></font></b></font></p>
+</td>
+<td bgcolor="#00b050" style="background: #00b050; border: 1px solid #9bbb59; padding: 0in 0.08in" width="14%"><p align="center" class="western" lang="pt-BR" style="widows: 2; orphans: 2">
+<font size="3" style="font-size: 12pt"><b><font color="#ffffff"><font size="2" style="font-size: 9pt">Periodicidade</font></font></b></font></p>
+</td>
+<td bgcolor="#00b050" style="background: #00b050; border: 1px solid #9bbb59; padding: 0in 0.08in" width="9%"><p align="center" class="western" lang="pt-BR" style="widows: 2; orphans: 2">
+<font size="3" style="font-size: 12pt"><b><font color="#ffffff"><font size="2" style="font-size: 9pt">Status</font></font></b></font></p>
+</td>
+</tr>
+<tr valign="top">
+<td bgcolor="#eaf1dd" style="background: #eaf1dd; border-top: 1px solid #c2d69b; border-bottom: 1px solid #c2d69b; border-left: 1px solid #c2d69b; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in" width="14%"><p align="center" class="western" lang="pt-BR" style="orphans: 2; widows: 2">
+<font size="3" style="font-size: 12pt"><font size="1" style="font-size: 8pt"><span style="letter-spacing: -0.3pt"><span style="font-weight: normal">07/01/2025
+			- 8:00</span></span></font></font></p>
+</td>
+<td bgcolor="#eaf1dd" style="background: #eaf1dd; border-top: 1px solid #c2d69b; border-bottom: 1px solid #c2d69b; border-left: none; border-right: none; padding: 0in" width="15%"><p align="center" class="western" lang="pt-BR" style="orphans: 2; widows: 2">
+<font size="3" style="font-size: 12pt"><font size="1" style="font-size: 8pt"><span style="letter-spacing: -0.3pt">13/01/2025
+			- 18:00</span></font></font></p>
+</td>
+<td bgcolor="#eaf1dd" style="background: #eaf1dd; border-top: 1px solid #c2d69b; border-bottom: 1px solid #c2d69b; border-left: none; border-right: none; padding: 0in" width="19%"><p align="center" class="western" lang="pt-BR" style="orphans: 2; widows: 2">
+<font size="3" style="font-size: 12pt"><font size="1" style="font-size: 8pt"><span style="letter-spacing: -0.3pt"><span lang="en-US">UG1
+			25 MW UTE FICTICIA</span></span></font></font></p>
+</td>
+<td bgcolor="#eaf1dd" style="background: #eaf1dd; border-top: 1px solid #c2d69b; border-bottom: 1px solid #c2d69b; border-left: none; border-right: none; padding: 0in" width="15%"><p align="center" class="western" lang="pt-BR" style="orphans: 2; widows: 2">
+<font size="3" style="font-size: 12pt"><font size="1" style="font-size: 8pt"><span style="letter-spacing: -0.3pt"><span lang="en-US">Com
+			desligamento</span></span></font></font></p>
+</td>
+<td bgcolor="#eaf1dd" style="background: #eaf1dd; border-top: 1px solid #c2d69b; border-bottom: 1px solid #c2d69b; border-left: none; border-right: none; padding: 0in" width="14%"><p align="center" class="western" lang="pt-BR" style="orphans: 2; widows: 2">
+<font size="3" style="font-size: 12pt"><font size="1" style="font-size: 8pt"><span style="letter-spacing: -0.3pt"><span lang="en-US">-</span></span></font></font></p>
+</td>
+<td bgcolor="#eaf1dd" style="background: #eaf1dd; border-top: 1px solid #c2d69b; border-bottom: 1px solid #c2d69b; border-left: none; border-right: none; padding: 0in" width="14%"><p align="center" class="western" lang="pt-BR" style="orphans: 2; widows: 2">
+<font size="3" style="font-size: 12pt"><font size="1" style="font-size: 8pt"><span style="letter-spacing: -0.3pt"><span lang="en-US">Contínua</span></span></font></font></p>
+</td>
+<td bgcolor="#eaf1dd" style="background: #eaf1dd; border-top: 1px solid #c2d69b; border-bottom: 1px solid #c2d69b; border-left: none; border-right: 1px solid #c2d69b; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in" width="9%"><p align="center" class="western" lang="pt-BR" style="orphans: 2; widows: 2">
+<font size="3" style="font-size: 12pt"><font size="1" style="font-size: 8pt"><span style="letter-spacing: -0.3pt"><span lang="en-US">Aprovada</span></span></font></font></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-top: 1px solid #c2d69b; border-bottom: 1px solid #c2d69b; border-left: 1px solid #c2d69b; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in" width="14%"><p align="center" class="western" lang="pt-BR" style="orphans: 2; widows: 2">
+<font size="3" style="font-size: 12pt"><font size="1" style="font-size: 8pt"><span style="letter-spacing: -0.3pt"><span style="font-weight: normal">20/12/2024
+			- 8:00</span></span></font></font></p>
+</td>
+<td style="border-top: 1px solid #c2d69b; border-bottom: 1px solid #c2d69b; border-left: none; border-right: none; padding: 0in" width="15%"><p align="center" class="western" lang="pt-BR" style="orphans: 2; widows: 2">
+<font size="3" style="font-size: 12pt"><font size="1" style="font-size: 8pt"><span style="letter-spacing: -0.3pt">13/01/2025
+			- 18:00</span></font></font></p>
+</td>
+<td style="border-top: 1px solid #c2d69b; border-bottom: 1px solid #c2d69b; border-left: none; border-right: none; padding: 0in" width="19%"><p align="center" class="western" lang="pt-BR" style="orphans: 2; widows: 2">
+<font size="3" style="font-size: 12pt"><font size="1" style="font-size: 8pt"><span style="letter-spacing: -0.3pt"><span lang="en-US">UG2
+			25 MW UTE FICTICIA</span></span></font></font></p>
+</td>
+<td style="border-top: 1px solid #c2d69b; border-bottom: 1px solid #c2d69b; border-left: none; border-right: none; padding: 0in" width="15%"><p align="center" class="western" lang="pt-BR" style="orphans: 2; widows: 2">
+<font size="3" style="font-size: 12pt"><font size="1" style="font-size: 8pt"><span style="letter-spacing: -0.3pt"><span lang="en-US">Sem
+			desligamento</span></span></font></font></p>
+</td>
+<td style="border-top: 1px solid #c2d69b; border-bottom: 1px solid #c2d69b; border-left: none; border-right: none; padding: 0in" width="14%"><p align="center" class="western" lang="pt-BR" style="orphans: 2; widows: 2">
+<font size="3" style="font-size: 12pt"><font size="1" style="font-size: 8pt"><span style="letter-spacing: -0.3pt"><span lang="en-US">8
+			MW</span></span></font></font></p>
+</td>
+<td style="border-top: 1px solid #c2d69b; border-bottom: 1px solid #c2d69b; border-left: none; border-right: none; padding: 0in" width="14%"><p align="center" class="western" lang="pt-BR" style="orphans: 2; widows: 2">
+<font size="3" style="font-size: 12pt"><font size="1" style="font-size: 8pt"><span style="letter-spacing: -0.3pt"><span lang="en-US">Contínua</span></span></font></font></p>
+</td>
+<td style="border-top: 1px solid #c2d69b; border-bottom: 1px solid #c2d69b; border-left: none; border-right: 1px solid #c2d69b; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in" width="9%"><p align="center" class="western" lang="pt-BR" style="orphans: 2; widows: 2">
+<font size="3" style="font-size: 12pt"><font size="1" style="font-size: 8pt"><span style="letter-spacing: -0.3pt"><span lang="en-US">Aprovada</span></span></font></font></p>
+</td>
+</tr>
+</table>
+<p class="western" lang="pt-BR" style="margin-bottom: 0in"><br/>
+</p>
+<p class="western callout" lang="pt-BR" style="margin-bottom: 0.17in">Ressalta-se
+que a manutenção na UG1 deve ser informada no insumo “Cronograma
+de manutenções térmicas”, pois é caracterizada como “com
+desligamento”, enquanto a manutenção na UG2, caracterizada como
+“sem desligamento”, não deve ser informada neste insumo. No
+entanto, seu impacto deve ser considerado no cálculo da
+disponibilidade e devidamente registrado no campo de comentários do
+formulário “Disponibilidade, Inflexibilidade e Custo das Usinas
+Térmicas”. Para o exemplo dado, imagina-se hipoteticamente que a
+intervenção na UG1 soluciona a restrição de 8 MW observada na
+UG2.</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Os
+dados de fator de capacidade, eventuais restrições operativas, e
+intervenções caracterizadas como “sem desligamento” que
+interfiram na geração, devem ser considerados no cálculo da
+disponibilidade e <b>informados no campo de comentários </b>do
+formulário.</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Sendo
+assim, levando-se em conta o horizonte de estudo para o PMO de
+Janeiro de 2025, realizando o cálculo de disponibilidade para cada
+patamar de carga em cada estágio, por meio da média dos valores em
+cada um deles, se chega aos seguintes valores:</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in; page-break-after: avoid">
+<font size="2" style="font-size: 9pt">Tabela <span style="background: #c0c0c0">4</span>
+- Disponibilidade da usina por estágio e patamar de carga para o
+exemplo</font></p>
+<table cellpadding="7" cellspacing="0" width="641">
+<col width="87"/>
+<col width="76"/>
+<col width="76"/>
+<col width="76"/>
+<col width="76"/>
+<col width="76"/>
+<col width="75"/>
+<tr>
+<td bgcolor="#00b050" style="background: #00b050; border: 1px solid #9bbb59; padding: 0in 0.08in" width="87"><p align="center" class="western" lang="pt-BR" style="orphans: 2; widows: 2">
+<font size="3" style="font-size: 12pt"><b><font size="2" style="font-size: 9pt">Patamar\Estágio</font></b></font></p>
+</td>
+<td bgcolor="#00b050" style="background: #00b050; border: 1px solid #9bbb59; padding: 0in 0.08in" width="76"><p align="center" class="western" lang="pt-BR" style="orphans: 2; widows: 2">
+<font size="3" style="font-size: 12pt"><b>S1</b></font></p>
+</td>
+<td bgcolor="#00b050" style="background: #00b050; border: 1px solid #9bbb59; padding: 0in 0.08in" width="76"><p align="center" class="western" lang="pt-BR" style="orphans: 2; widows: 2">
+<font size="3" style="font-size: 12pt"><b>S2</b></font></p>
+</td>
+<td bgcolor="#00b050" style="background: #00b050; border: 1px solid #9bbb59; padding: 0in 0.08in" width="76"><p align="center" class="western" lang="pt-BR" style="orphans: 2; widows: 2">
+<font size="3" style="font-size: 12pt"><b>S3</b></font></p>
+</td>
+<td bgcolor="#00b050" style="background: #00b050; border: 1px solid #9bbb59; padding: 0in 0.08in" width="76"><p align="center" class="western" lang="pt-BR" style="orphans: 2; widows: 2">
+<font size="3" style="font-size: 12pt"><b>S4</b></font></p>
+</td>
+<td bgcolor="#00b050" style="background: #00b050; border: 1px solid #9bbb59; padding: 0in 0.08in" width="76"><p align="center" class="western" lang="pt-BR" style="orphans: 2; widows: 2">
+<font size="3" style="font-size: 12pt"><b>S5</b></font></p>
+</td>
+<td bgcolor="#00b050" style="background: #00b050; border: 1px solid #9bbb59; padding: 0in 0.08in" width="75"><p align="center" class="western" lang="pt-BR" style="orphans: 2; widows: 2">
+<font size="3" style="font-size: 12pt"><b>M1</b></font></p>
+</td>
+</tr>
+<tr valign="top">
+<td bgcolor="#c99bb0" style="background: #c99bb0; border: 1px solid #c2d69b; padding: 0in 0.08in" width="87"><p align="center" class="western" lang="pt-BR" style="widows: 2; orphans: 2">
+<font size="3" style="font-size: 12pt"><b>Pesado</b></font></p>
+</td>
+<td bgcolor="#eaf1dd" style="background: #eaf1dd; border: 1px solid #c2d69b; padding: 0in 0.08in" width="76"><p align="center" class="western" lang="pt-BR" style="orphans: 2; widows: 2">
+<font size="3" style="font-size: 12pt"><font color="#000000"><font size="2" style="font-size: 11pt">89,2</font></font></font></p>
+</td>
+<td bgcolor="#eaf1dd" style="background: #eaf1dd; border: 1px solid #c2d69b; padding: 0in 0.08in" width="76"><p align="center" class="western" lang="pt-BR" style="orphans: 2; widows: 2">
+<font size="3" style="font-size: 12pt"><font color="#000000"><font size="2" style="font-size: 11pt">69,8</font></font></font></p>
+</td>
+<td bgcolor="#eaf1dd" style="background: #eaf1dd; border: 1px solid #c2d69b; padding: 0in 0.08in" width="76"><p align="center" class="western" lang="pt-BR" style="orphans: 2; widows: 2">
+<font size="3" style="font-size: 12pt"><font color="#000000"><font size="2" style="font-size: 11pt">94,6</font></font></font></p>
+</td>
+<td bgcolor="#eaf1dd" style="background: #eaf1dd; border: 1px solid #c2d69b; padding: 0in 0.08in" width="76"><p align="center" class="western" lang="pt-BR" style="orphans: 2; widows: 2">
+<font size="3" style="font-size: 12pt"><font color="#000000"><font size="2" style="font-size: 11pt">97,0</font></font></font></p>
+</td>
+<td bgcolor="#eaf1dd" style="background: #eaf1dd; border: 1px solid #c2d69b; padding: 0in 0.08in" width="76"><p align="center" class="western" lang="pt-BR" style="orphans: 2; widows: 2">
+<font size="3" style="font-size: 12pt"><font color="#000000"><font size="2" style="font-size: 11pt">97,0</font></font></font></p>
+</td>
+<td bgcolor="#eaf1dd" style="background: #eaf1dd; border: 1px solid #c2d69b; padding: 0in 0.08in" width="75"><p align="center" class="western" lang="pt-BR" style="orphans: 2; widows: 2">
+<font size="3" style="font-size: 12pt"><font color="#000000"><font size="2" style="font-size: 11pt">97,0</font></font></font></p>
+</td>
+</tr>
+<tr valign="top">
+<td bgcolor="#f4b084" style="background: #f4b084; border: 1px solid #c2d69b; padding: 0in 0.08in" width="87"><p align="center" class="western" lang="pt-BR" style="widows: 2; orphans: 2">
+<font size="3" style="font-size: 12pt"><b>Médio</b></font></p>
+</td>
+<td style="border: 1px solid #c2d69b; padding: 0in 0.08in" width="76"><p align="center" class="western" lang="pt-BR" style="orphans: 2; widows: 2">
+<font size="3" style="font-size: 12pt"><font color="#000000"><font size="2" style="font-size: 11pt">89,2</font></font></font></p>
+</td>
+<td style="border: 1px solid #c2d69b; padding: 0in 0.08in" width="76"><p align="center" class="western" lang="pt-BR" style="orphans: 2; widows: 2">
+<font size="3" style="font-size: 12pt"><font color="#000000"><font size="2" style="font-size: 11pt">74,9</font></font></font></p>
+</td>
+<td style="border: 1px solid #c2d69b; padding: 0in 0.08in" width="76"><p align="center" class="western" lang="pt-BR" style="orphans: 2; widows: 2">
+<font size="3" style="font-size: 12pt"><font color="#000000"><font size="2" style="font-size: 11pt">85,1</font></font></font></p>
+</td>
+<td style="border: 1px solid #c2d69b; padding: 0in 0.08in" width="76"><p align="center" class="western" lang="pt-BR" style="orphans: 2; widows: 2">
+<font size="3" style="font-size: 12pt"><font color="#000000"><font size="2" style="font-size: 11pt">97,0</font></font></font></p>
+</td>
+<td style="border: 1px solid #c2d69b; padding: 0in 0.08in" width="76"><p align="center" class="western" lang="pt-BR" style="orphans: 2; widows: 2">
+<font size="3" style="font-size: 12pt"><font color="#000000"><font size="2" style="font-size: 11pt">97,0</font></font></font></p>
+</td>
+<td style="border: 1px solid #c2d69b; padding: 0in 0.08in" width="75"><p align="center" class="western" lang="pt-BR" style="orphans: 2; widows: 2">
+<font size="3" style="font-size: 12pt"><font color="#000000"><font size="2" style="font-size: 11pt">97,0</font></font></font></p>
+</td>
+</tr>
+<tr valign="top">
+<td bgcolor="#fff2cc" style="background: #fff2cc; border: 1px solid #c2d69b; padding: 0in 0.08in" width="87"><p align="center" class="western" lang="pt-BR" style="widows: 2; orphans: 2">
+<font size="3" style="font-size: 12pt"><b>Leve</b></font></p>
+</td>
+<td bgcolor="#eaf1dd" style="background: #eaf1dd; border: 1px solid #c2d69b; padding: 0in 0.08in" width="76"><p align="center" class="western" lang="pt-BR" style="orphans: 2; widows: 2">
+<font size="3" style="font-size: 12pt"><font color="#000000"><font size="2" style="font-size: 11pt">89,2</font></font></font></p>
+</td>
+<td bgcolor="#eaf1dd" style="background: #eaf1dd; border: 1px solid #c2d69b; padding: 0in 0.08in" width="76"><p align="center" class="western" lang="pt-BR" style="orphans: 2; widows: 2">
+<font size="3" style="font-size: 12pt"><font color="#000000"><font size="2" style="font-size: 11pt">81,9</font></font></font></p>
+</td>
+<td bgcolor="#eaf1dd" style="background: #eaf1dd; border: 1px solid #c2d69b; padding: 0in 0.08in" width="76"><p align="center" class="western" lang="pt-BR" style="orphans: 2; widows: 2">
+<font size="3" style="font-size: 12pt"><font color="#000000"><font size="2" style="font-size: 11pt">78,0</font></font></font></p>
+</td>
+<td bgcolor="#eaf1dd" style="background: #eaf1dd; border: 1px solid #c2d69b; padding: 0in 0.08in" width="76"><p align="center" class="western" lang="pt-BR" style="orphans: 2; widows: 2">
+<font size="3" style="font-size: 12pt"><font color="#000000"><font size="2" style="font-size: 11pt">97,0</font></font></font></p>
+</td>
+<td bgcolor="#eaf1dd" style="background: #eaf1dd; border: 1px solid #c2d69b; padding: 0in 0.08in" width="76"><p align="center" class="western" lang="pt-BR" style="orphans: 2; widows: 2">
+<font size="3" style="font-size: 12pt"><font color="#000000"><font size="2" style="font-size: 11pt">97,0</font></font></font></p>
+</td>
+<td bgcolor="#eaf1dd" style="background: #eaf1dd; border: 1px solid #c2d69b; padding: 0in 0.08in" width="75"><p align="center" class="western" lang="pt-BR" style="orphans: 2; widows: 2">
+<font size="3" style="font-size: 12pt"><font color="#000000"><font size="2" style="font-size: 11pt">97,0</font></font></font></p>
+</td>
+</tr>
+</table>
+<p class="western" lang="pt-BR" style="margin-bottom: 0in"><br/>
+</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">O
+detalhamento dos valores considerados para cada hora, para todo o
+horizonte de estudo, se encontra na seção <span style="background: #c0c0c0">Anexo I.2</span>,
+com a utilização da planilha “CargaPatamar”.</p>
+<ol>
+<ol>
+<ol>
+<ol>
+<ul>
+<li><h4 id="envio-da-disponibilidade-inflexibilidade-e-custo-de-usinas-termicas-no-webpmo">Envio da Disponibilidade,
+					Inflexibilidade e Custo de Usinas Térmicas no WebPMO</h4></li>
+</ul>
+</ol>
+</ol>
+</ol>
+</ol>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Dentro
+do WebPMO, o usuário deverá selecionar o insumo “Disponibilidade,
+Inflexibilidade e Custo de Usinas Térmicas” (passo 1), e então
+clicar em pesquisar (passo 2), selecionar o Agente no marcador (passo
+3) e depois clicar em informar (passo 4).</p>
+<p align="center" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="bottom" alt="Ilustração do Guia do Usuário do WebPMO" border="0" height="133" loading="lazy" name="Image14" src="assets/Guia do usuário do WebPMO_html_96ef3f4f.gif" width="586"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><font size="2" style="font-size: 9pt">Figura
+<span style="background: #c0c0c0">3831</span>: Exemplo de envio da
+Disponibilidade, Inflexibilidade e Custo de Usinas Térmicas</font></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Após
+clicar em informar, o usuário será encaminhado para a tela abaixo
+com todas as UTEs de propriedade do Agente selecionado. Caso os dados
+a serem informados sejam iguais aos da semana anterior, o usuário
+poderá repeti-los ao clicar no botão “Recuperar” e, em seguida,
+em “Enviar”. Ressalta-se que, em semanas de elaboração do PMO,
+não é possível recuperar dados, uma vez que o horizonte de estudo
+é modificado. Caso as informações prestadas tenham alteração com
+relação à semana anterior, o usuário poderá preenchê-las como
+especificado nesta seção, clicar em “Salvar” e depois em
+“Enviar”, para que o formulário seja analisado pela equipe do
+PMO.</p>
+<p align="center" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="bottom" alt="Ilustração do Guia do Usuário do WebPMO" border="0" height="186" loading="lazy" name="Image15" src="assets/Guia do usuário do WebPMO_html_d3d73421.gif" width="477"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><font size="2" style="font-size: 9pt">Figura
+<span style="background: #c0c0c0">3932</span>: Aba da
+Disponibilidade, Inflexibilidade e Custo de Usinas Térmicas a ser
+enviado</font></p>
+<ol>
+<ol>
+<ol start="3">
+<li><h4 id="disponibilidade-inflexibilidade-e-custo-de-termicas-gnl"><a name="_Toc235475290"></a>Disponibilidade,
+			Inflexibilidade e Custo de Térmicas GNL</h4></li>
+</ol>
+</ol>
+</ol>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Este
+formulário é análogo ao anterior, sendo o horizonte da informação
+a única diferença. Como o despacho das usinas termelétricas a GNL
+é realizado com nove semanas de antecedência pelo modelo DECOMP, a
+disponibilidade de tais usinas (no momento, UTEs Santa Cruz e Porto
+Sergipe) deve ser informado para o horizonte que contempla as semanas
+operativas do PMO e mais os três meses subsequentes (dois estágios
+mensais a mais além do estágio mensal já existente no estudo), a
+fim de completar as nove semanas do despacho antecipado.</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Os
+campos das grandezas coletadas estão ilustrados a seguir.</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in"><img align="bottom" alt="Imagem 1" height="117" hspace="12" loading="lazy" name="Imagem 1" src="assets/Guia do usuário do WebPMO_html_383e7e74.gif" vspace="8" width="642"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><font size="2" style="font-size: 9pt">Figura
+<span style="background: #c0c0c0">4033</span>: Insumo de
+disponibilidade, inflexibilidade e custo para usinas termelétricas a
+GNL</font></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Estas
+informações compõem o Bloco TG (Bloco 1 – Térmicas a GNL) do
+arquivo <i>dadgnl</i>, conforme ilustrado no quadro a seguir, onde,
+por exemplo, a usina 86 (UTE Santa Cruz) apresenta valores de
+inflexibilidade 0 MWmed e disponibilidade de 500 MWmed para todos os
+patamares de carga (pesada, média e leve) nos estágios 1-5 e
+disponibilidade de 350 MWmed nos estágios a partir do 6, conforme
+envio do Agente. Como o campo de CVU do formulário se encontra em
+branco,<b> é utilizado no arquivo de entrada o CVU regulado.</b>
+</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in"><img align="bottom" alt="Imagem 1" height="161" hspace="12" loading="lazy" name="Imagem 1" src="assets/Guia do usuário do WebPMO_html_52491a39.gif" vspace="10" width="632"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><font size="2" style="font-size: 9pt">Figura
+<span style="background: #c0c0c0">4134</span>: Representação no
+arquivo <i>dadgnl</i></font></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">A
+representação das colunas é dada por:</p>
+<ul>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 1-2:
+	Identificação do registro: <b>TG</b>;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 5-7: Número
+	da usina termelétrica GNL;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 10-11:
+	Indice do subsistema ao qual pertence a usina;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 15-24: Nome
+	da usina termelétrica GNL;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 25-26:
+	Indice do estágio;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 30-34:
+	Geração mínima fixa da usina, em MWmed, no patamar 1;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 35-39:
+	Capacidade de geração da usina, em MWmed, no patamar 1;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 40-49:
+	Custo de geração da usina termelétrica, em $/MWh, no patamar 1.</p></li>
+</ul>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">O
+cálculo de disponibilidade das usinas GNL se dá de forma análoga
+ao exemplo das termelétricas da seção <span style="background: #c0c0c0">4.2.2</span>,
+bastando <b>adicionar mais dois meses</b> ao horizonte do estudo.</p>
+<ol>
+<ol start="3">
+<li><h3 id="insumos-especificos"><a name="_Toc235475291"></a>Insumos
+		específicos</h3>
+<ol>
+<li><h4 id="nivel-de-canal-de-fuga-uhe-tucurui"><a name="_Toc235475292"></a>Nível
+			de Canal de Fuga (UHE Tucuruí)</h4></li>
+</ol>
+</li></ol>
+</ol>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">O
+insumo “Nível do Canal de Fuga” é coletado apenas para a UHE
+Tucuruí, pois esta usina hidráulica possui uma modelagem refinada
+nos estudos do PMO. 
+</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">A tela
+a seguir mostra um exemplo da coleta desses dados.</p>
+<p align="center" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="bottom" alt="Imagem 1" height="73" hspace="10" loading="lazy" name="Imagem 1" src="assets/Guia do usuário do WebPMO_html_d2663a2e.gif" vspace="8" width="478"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><font size="2" style="font-size: 9pt">Figura
+<span style="background: #c0c0c0">4235</span>: Insumo do nível do
+canal de fuga</font></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">O dado
+do nível de canal de fuga declarado pelo agente deve ser fornecido
+em metros (m) para os dois meses de estudo, com apenas um único
+valor para o primeiro e outro para o segundo mês, sendo atualizado
+apenas no PMO seguinte. Tal valor deve ser compatibilizado em PMO com
+o modelo NEWAVE para os dois primeiros meses do estudo. Os demais
+meses de estudo no NEWAVE utilizam valores de canal de fuga médio de
+cadastro, encontrados no arquivo <i>hidr.dat</i>.</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Estas
+informações são apresentadas no Bloco AC (Bloco 25 – Modificação
+do Cadastro), conforme ilustrado no quadro a seguir.</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.17in; margin-left: 0.5in">
+<img align="bottom" alt="Ilustração do Guia do Usuário do WebPMO" border="0" height="187" loading="lazy" name="Image16" src="assets/Guia do usuário do WebPMO_html_80cd99f9.png" width="531"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><font size="2" style="font-size: 9pt">Figura
+<span style="background: #c0c0c0">4336</span>: Representação no
+arquivo <i>dadger</i> do nível do canal de fuga no bloco AC</font></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">A
+representação das colunas é dada por:</p>
+<ul>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 1-2:
+	Identificação do registro: AC;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 5-7: Número
+	da usina hidráulica conforme campo 2 dos registros UH;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 10-15:
+	Mnemônico para identificação do parâmetro a ser modificado;</p>
+<ul>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">JUSMED: Cota
+		média do canal de fuga (metros).</p></li>
+</ul>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 26-30: Novo
+	valor do(s) parâmetro(s);</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 70-72: Três
+	primeiras letras do mês correspondente à alteração;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 75: Número
+	da semana do mês inicial a partir da qual deve se considerar a
+	alteração e 
+	</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 77-80: Ano
+	correspondente à alteração.</p></li>
+</li></ul>
+<ol>
+<ol>
+<ol>
+<ol>
+<ul>
+<li><h4 id="envio-do-nivel-do-canal-de-fuga-no-webpmo">Envio do nível do canal de
+					fuga no WebPMO</h4></li>
+</ul>
+</ol>
+</ol>
+</ol>
+</ol>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in"><font color="#000000">Dentro
+do WebPMO, o Agente deverá selecionar o insumo “Nível do Canal de
+Fuga” (passo 1), e então clicar em “Pesquisar” (passo 2). Em
+seguida, selecionar o Agente no marcador (passo 3) e depois clicar em
+“Informar” (passo 4).</font></p>
+<p align="center" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="bottom" alt="Ilustração do Guia do Usuário do WebPMO" border="0" height="130" loading="lazy" name="Image17" src="assets/Guia do usuário do WebPMO_html_2756913c.gif" width="542"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><font size="2" style="font-size: 9pt">Figura
+<span style="background: #c0c0c0">4437</span>: Exemplo de envio do
+Nível do Canal de Fuga</font></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in"><font color="#000000">Em
+seguida, o usuário será encaminhado para a tela abaixo, somente com
+a UHE Tucuruí. Para este insumo, o Agente deve preencher valores
+mensais para os dois meses de estudo (passo 1 da tela a seguir). Após
+o preenchimento, o Agente pode clicar em “salvar” (passo 2) e
+depois em “enviar” (passo 3) ou então enviar diretamente o dado
+para análise.</font></p>
+<p align="center" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="bottom" alt="Ilustração do Guia do Usuário do WebPMO" border="0" height="126" loading="lazy" name="Image18" src="assets/Guia do usuário do WebPMO_html_6f849726.gif" width="478"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><font size="2" style="font-size: 9pt">Figura
+<span style="background: #c0c0c0">4538</span>: Aba do Nível do Canal
+de Fuga a ser enviado</font></p>
+<ol>
+<ol>
+<ol start="2">
+<li><h4 id="vazao-de-bombeamento-agente-light-gt"><a name="_Toc235475293"></a>Vazão
+			de Bombeamento (Agente Light GT)</h4></li>
+</ol>
+</ol>
+</ol>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">O
+insumo “vazão de bombeamento” é coletado apenas para o Agente
+Light GT, levando em conta a modelagem das usinas elevatórias de
+Santa Cecília e Vigário, que fazem a transposição da água do Rio
+Paraíba do Sul para região metropolitana do Rio de Janeiro. 
+</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">A tela
+a seguir mostra um exemplo da coleta desses dados.</p>
+<p align="center" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="bottom" alt="Ilustração do Guia do Usuário do WebPMO" border="0" height="113" loading="lazy" name="Image19" src="assets/Guia do usuário do WebPMO_html_51258968.png" width="628"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><font size="2" style="font-size: 9pt">Figura
+<span style="background: #c0c0c0">4639</span>: Insumo da vazão de
+bombeamento</font></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">O dado
+de vazão de bombeamento deve ser declarado pelo agente em <b>metros
+cúbicos por segundo (m³/s) para os dois meses de estudo</b>, sendo
+o primeiro mês discretizado em semanas operativas e o segundo com um
+valor mensal único. 
+</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Esta
+informação, no formato de dado de cadastro, se encontra no arquivo
+<i>dadger</i>, no Bloco UE (Bloco 5 – Estações de Bombeamento).
+Como no caso do exemplo acima há uma especificação do agente sobre
+uma manutenção em uma das máquinas reversíveis, o valor da
+grandeza será menor que o cadastrado e incluído em uma restrição
+de vazão de bombeamento máxima (mnemônico QBOM).</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Estas
+informações são apresentadas no arquivo <i>dadger</i>, no Bloco HQ
+(Bloco 36 – Restrições de vazão defluente), conforme ilustrado
+no quadro a seguir.</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.17in"><img align="bottom" alt="Ilustração do Guia do Usuário do WebPMO" border="0" height="288" loading="lazy" name="Image20" src="assets/Guia do usuário do WebPMO_html_7420c03f.png" width="523"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><font size="2" style="font-size: 9pt">Figura
+<span style="background: #c0c0c0">4740</span>: Representação no
+arquivo <i>dadger</i> da vazão de bombeamento no bloco HQ</font></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">A
+representação das colunas é dada por:</p>
+<ul>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 1-2:
+	Identificação do registro: CQ;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 5-7: Número
+	da restrição de Vazão, conforme campo 2 do registro HQ;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 10-11:
+	Número do estágio, em ordem crescente;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 15-17:
+	Número da usina hidrelétrica, conforme campo 2 do registro UH;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 20-29:
+	Coeficiente de cada variável na restrição RHQ e</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 35-38: QBOM
+	– Vazão bombeada nas estações de bombeamento.</p></li>
+</ul>
+<ol>
+<ol>
+<ol>
+<ol>
+<ul>
+<li><h4 id="envio-da-vazao-de-bombeamento-no-webpmo">Envio da vazão de
+					bombeamento no WebPMO</h4></li>
+</ul>
+</ol>
+</ol>
+</ol>
+</ol>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in"><font color="#000000">Dentro
+do WebPMO, o Agente deverá selecionar o insumo “Vazão de
+Bombeamento” (passo 1), então clicar em pesquisar (passo 2),
+selecionar o Agente no marcador (passo 3) e depois clicar em informar
+(passo 4).</font></p>
+<p align="center" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="bottom" alt="Ilustração do Guia do Usuário do WebPMO" border="0" height="130" loading="lazy" name="Image21" src="assets/Guia do usuário do WebPMO_html_58be13aa.gif" width="585"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><font size="2" style="font-size: 9pt"><font color="#000000">Figura
+</font><font color="#000000"><span style="background: #c0c0c0">4841</span></font><font color="#000000">:
+Exemplo de envio da Vazão de Bombeamento</font></font></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in"><font color="#000000">Em
+seguida, o usuário será encaminhado para a tela abaixo com as UHEs
+Santa Cecília e Vigário. Caso as restrições sejam iguais às da
+semana anterior, o usuário poderá recuperar a informação enviada
+clicando em “Recuperar Dados” (este dado só poderá ser usado em
+revisões, uma vez que em semanas de PMO há novas semanas a
+preencher, como no caso abaixo). Nesse caso o Agente deve preencher
+as informações manualmente, seguindo as especificações descritas
+neste capítulo, e então clicar em “salvar” (passo 1) e em
+“enviar” para que o dado seja enviado para análise (passo 2) ou
+diretamente clicando em “enviar” após o preenchimento.</font></p>
+<p align="center" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="bottom" alt="Ilustração do Guia do Usuário do WebPMO" border="0" height="136" loading="lazy" name="Image22" src="assets/Guia do usuário do WebPMO_html_7b543c17.gif" width="478"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><font size="2" style="font-size: 9pt"><font color="#000000">Figura
+</font><font color="#000000"><span style="background: #c0c0c0">4942</span></font><font color="#000000">:
+Aba da Vazão de Bombeamento a ser enviado</font></font></p>
+<ol>
+<ol>
+<ol start="3">
+<li><h4 id="uhe-itaipu"><a name="_Toc235475294"></a>UHE
+			Itaipu</h4></li>
+</ol>
+</ol>
+</ol>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">A usina
+hidrelétrica de Itaipu possui uma modelagem diferentes das demais
+usinas no modelo DECOMP. Itaipu é representada através de dois
+conjuntos de geração: o de 50 Hz, que está eletricamente conectado
+ao subsistema SE/CO através do elo de Furnas e à carga da ANDE no
+Paraguai, e o conjunto de 60 Hz, que está conectado ao nó de
+Ivaiporã. Mais detalhes sobre esta modelagem podem ser encontrados
+no manual de metodologia [8].</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Dessa
+forma, para representação deste modelo no arquivo de entrada <i>dadger</i>
+é necessário que no WebPMO o Agente envie os seguintes insumos:
+<b>consumo interno de energia e suprimento a ANDE</b>.</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">O
+<b>consumo interno de energia</b> corresponde ao valor do próprio
+consumo de energia da usina considerando tanto Itaipu 50 Hz e 60 Hz,
+este deve ser informado <b>para todos os estágios operativos em</b>
+<b>MWmed</b>.</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">A tela
+a seguir mostra um exemplo da coleta desses dados.</p>
+<p align="center" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="bottom" alt="Imagem 1" height="81" hspace="12" loading="lazy" name="Imagem 1" src="assets/Guia do usuário do WebPMO_html_d4b7bc5d.gif" vspace="8" width="628"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><font size="2" style="font-size: 9pt">Figura
+<span style="background: #c0c0c0">5043</span>: Insumo do consumo
+interno de energia</font></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">O
+<b>suprimento a ANDE</b> corresponde a carga do Paraguai e está
+incorporada à geração 50Hz. O Agente deve informar este dado <b>para
+todos os estágios operativos em MWmed</b>.</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">A tela
+a seguir mostra um exemplo da coleta desses dados.</p>
+<p align="center" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="bottom" alt="Imagem 1" height="77" hspace="12" loading="lazy" name="Imagem 1" src="assets/Guia do usuário do WebPMO_html_3f9827bf.gif" vspace="7" width="595"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><font size="2" style="font-size: 9pt">Figura
+<span style="background: #c0c0c0">5144</span>: Insumo da potência
+contratada pelo SIN</font></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Na
+versão em uso do modelo DECOMP, estas informações são usadas para
+cálculo para uso no arquivo <i>dadger</i>, no Bloco 10 (Registro
+RI), este registro incorpora à representação dos limites máximo e
+mínimo para Itaipu 50 Hz e 60 Hz e a parcela desta geração
+relativa à carga da Ande, conforme ilustrado no quadro a seguir.</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.17in"><img align="bottom" alt="Ilustração do Guia do Usuário do WebPMO" border="0" height="109" loading="lazy" name="Image23" src="assets/Guia do usuário do WebPMO_html_33d544a5.png" width="567"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><font size="2" style="font-size: 9pt">Figura
+<span style="background: #c0c0c0">5245</span>: Representação no
+arquivo <i>dadger</i> do registro de Itaipu</font></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">A
+representação das colunas é dada por:</p>
+<ul>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 1-2:
+	Identificação do registro: RI;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 5-7: Índice
+	da usina de Itaipu (conforme campo 2 dos registros UH);</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 9-11:
+	Identificação do estágio;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 13-15:
+	Índice do subsistema que representa o Sudeste;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 17-23:
+	Geração mínima de Itaipu_60 Hz, em MWmed, no patamar 1;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 24-30: 
+	Geração máxima de Itaipu_60 Hz, em MWmed, no patamar 1;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 31-37:
+	Geração mínima de Itaipu_50 Hz, em MWmed, no patamar 1;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 38-44:
+	Geração máxima de Itaipu_50 Hz, em MWmed, no patamar 1;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">Coluna 45-51:
+	Carga da Ande, em MWmed, no patamar 1;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">E assim segue para
+	os demais patamares de carga.</p></li>
+</ul>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Exemplificando,
+os valores de entrada no arquivo <i>dadger</i> no registro RI, temos:</p>
+<ul>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">No mínimo para 60
+	Hz é considerado a geração mínima para evitar auto-excitação
+	das unidades quando da atuação do SEP do 750 kV, assim como
+	especificado no envio do WebPMO no insumo das Restrições Elétricas
+	Conjunturais Hidrelétricas por parte do Agente;</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">No mínimo para 50
+	Hz é dado pelo maior valor entre:</p></li>
+</ul>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.17in; margin-left: 0.5in">
+<img align="absmiddle" alt="Ilustração do Guia do Usuário do WebPMO" loading="lazy" name="Object12" src="assets/Guia do usuário do WebPMO_html_ca297350.gif"/>
+</p>
+<p lang="pt-BR" style="margin-bottom: 0.17in; margin-left: 0.5in">Onde,
+<img align="absmiddle" alt="Ilustração do Guia do Usuário do WebPMO" loading="lazy" name="Object13" src="assets/Guia do usuário do WebPMO_html_36191243.gif"/>
+
+representa o valor mínimo do fluxo do bipolo de Ibiúna, sendo NC o
+número de conversores e, para faixas de potência inferiores a 945
+MW é recomendado a operação com 4 conversores. O 
+<img align="absmiddle" alt="Ilustração do Guia do Usuário do WebPMO" loading="lazy" name="Object14" src="assets/Guia do usuário do WebPMO_html_2ba9ec90.gif"/>
+
+para esta faixa operativa em 50 Hz é de 500 MW;</p>
+<p lang="pt-BR" style="margin-bottom: 0.17in; margin-left: 0.5in"><br/>
+<br/>
+</p>
+<ul>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">No máximo para 50
+	e 60 Hz é considerado a geração máxima de Itaipu, que são dadas
+	por 10 máquinas de 700 MW, e, portanto, a geração é de 7.000 MW
+	e</p></li>
+<li><p lang="pt-BR" style="margin-bottom: 0.17in">O valor da carga
+	de Ande será dada pela própria carga informada no WebPMO pelo
+	Agente mais a metade do consumo interno de Itaipu.</p></li>
+</ul>
+<ol>
+<ol>
+<ol>
+<ol>
+<ul>
+<li><h4 id="envio-do-consumo-interno-de-energia">Envio do consumo interno de
+					energia</h4></li>
+</ul>
+</ol>
+</ol>
+</ol>
+</ol>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in"><font color="#000000">Dentro
+do WebPMO, o Agente deverá selecionar o insumo “Consumo Interno de
+Energia” (passo 1), e então ir em pesquisar (passo 2). Selecionar
+o Agente no marcador (passo 3) e depois ir em informar (passo 4).</font></p>
+<p align="center" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="bottom" alt="Ilustração do Guia do Usuário do WebPMO" border="0" height="121" loading="lazy" name="Image24" src="assets/Guia do usuário do WebPMO_html_35cd1a1d.gif" width="542"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><font size="2" style="font-size: 9pt"><font color="#000000">Figura
+</font><font color="#000000"><span style="background: #c0c0c0">5346</span></font><font color="#000000">:
+Exemplo de envio do Consumo Interno de Energia</font></font></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in"><a name="_Hlk187158740"></a>
+<font color="#000000">Após, clicar em informar, o usuário será
+encaminhado para a tela abaixo, onde terá somente a UHE Itaipu. Para
+este insumo, o Agente deve preencher o dado todas as semanas
+operativas do estudo e para o estágio mensal. Caso o envio não seja
+em semana de PMO o Agente conseguirá recuperar os dados, passo 1, e
+então, o Agente deve salvar, passo 2, e depois enviar o dado para
+análise, passo 3. Caso contrário, deverá ser realizado o
+preenchimento do insumo ao invés de recuperar e seguir os passos
+subsequentes.</font></p>
+<p align="center" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="bottom" alt="Imagem 13" height="167" hspace="10" loading="lazy" name="Imagem 13" src="assets/Guia do usuário do WebPMO_html_af266751.gif" vspace="10" width="421"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><font size="2" style="font-size: 9pt"><font color="#000000">Figura
+</font><font color="#000000"><span style="background: #c0c0c0">5447</span></font><font color="#000000">:
+Aba </font><font color="#000000">do Consumo Interno de Energia a ser
+enviado</font></font></p>
+<ol>
+<ol>
+<ol>
+<ol>
+<ul>
+<li><h4 id="envio-do-suprimento-da-ande">Envio do suprimento da ANDE</h4></li>
+</ul>
+</ol>
+</ol>
+</ol>
+</ol>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in"><font color="#000000">Dentro
+do WebPMO, o Agente deverá selecionar o insumo “Suprimento da
+ANDE” (passo 1), e então ir em pesquisar (passo 2). Selecionar o
+Agente no marcador (passo 3) e depois ir em informar (passo 4).</font></p>
+<p align="center" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="bottom" alt="Ilustração do Guia do Usuário do WebPMO" border="0" height="120" loading="lazy" name="Image25" src="assets/Guia do usuário do WebPMO_html_4a503503.gif" width="542"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><font size="2" style="font-size: 9pt"><font color="#000000">Figura
+</font><font color="#000000"><span style="background: #c0c0c0">5548</span></font><font color="#000000">:
+Exemplo de envio do Suprimento da ANDE</font></font></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in"><font color="#000000">Após,
+clicar em informar, o usuário será encaminhado para a tela abaixo,
+onde terá somente a UHE Itaipu. Para este insumo, o Agente deve
+preencher o dado todas as semanas operativas do estudo e para o
+estágio mensal. Caso o envio não seja em semana de PMO o Agente
+conseguirá recuperar os dados, passo 1, e então, o Agente deve
+salvar, passo 2, e depois enviar o dado para análise, passo 3. Caso
+contrário, deverá ser realizado o preenchimento do insumo ao invés
+de recuperar e seguir os passos subsequentes.</font></p>
+<p align="center" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="bottom" alt="Imagem 1" height="145" hspace="10" loading="lazy" name="Imagem 1" src="assets/Guia do usuário do WebPMO_html_66918eee.gif" vspace="10" width="449"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><font size="2" style="font-size: 9pt"><font color="#000000">Figura
+</font><font color="#000000"><span style="background: #c0c0c0">5649</span></font><font color="#000000">:
+Aba do Suprimento da ANDE</font></font></p>
+<ol start="5">
+<li><h2 id="contatos-e-referencias"><a name="_Toc235475295"></a><a name="_Toc187851597"></a><a name="_Toc187851432"></a><a name="_Toc187851596"></a><a name="_Toc187851431"></a>
+	Contatos e referências</h2></li>
+</ol>
+<ol>
+<ol>
+<li value="1"><h3 id="contatos"><a name="_Toc235475296"></a>
+		Contatos</h3></li>
+</ol>
+</ol>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in"><font color="#000000">Caso
+haja dúvida em relação aos envios dos insumos, favor enviar para o
+endereço eletrônico da Equipe do PMO </font>(<font color="#0000ff"><u><a href="mailto:pmo@ons.org.br">pmo@ons.org.br</a></u></font>)<font color="#000000">.
+Lembrando que é para este mesmo e-mail que deve ser solicitado o
+cadastro para se acessar o sistema WebPMO, assim como informado no
+capítulo 3.1. </font>
+</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in"><font color="#000000">A
+equipe também fica disponível para dúvidas na Central de
+Atendimento do ONS.</font></p>
+<ol>
+<ol start="2">
+<li><h3 id="referencias"><a name="_Toc235475297"></a>Referências</h3></li>
+</ol>
+</ol>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">[1]
+RESOLUÇÃO NORMATIVA ANEEL Nº 1.032, DE 26 DE JULHO DE 2022 –
+<font color="#0000ff"><u><a href="https://www2.aneel.gov.br/cedoc/ren20221032.pdf">https://www2.aneel.gov.br/cedoc/ren20221032.pdf</a></u></font></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">[2]
+Procedimentos de Rede – Submódulo 4.3 (Procedimental) -
+<font color="#0000ff"><u><a href="https://apps08.ons.org.br/ONS.Sintegre.Proxy/ecmprsite/ecmfragmentsdocuments/Subm%C3%B3dulo%204.3-PR_2023.11.pdf">https://apps08.ons.org.br/ONS.Sintegre.Proxy/ecmprsite/ecmfragmentsdocuments/Subm%C3%B3dulo%204.3-PR_2023.11.pdf</a></u></font>.</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">[3]
+Procedimentos de Rede – Submódulo 4.3 (Responsabilidades) -
+<font color="#0000ff"><u><a href="https://apps08.ons.org.br/ONS.Sintegre.Proxy/ecmprsite/ecmfragmentsdocuments/Subm%C3%B3dulo%204.3-RS_2020.12.pdf">https://apps08.ons.org.br/ONS.Sintegre.Proxy/ecmprsite/ecmfragmentsdocuments/Subm%C3%B3dulo%204.3-RS_2020.12.pdf</a></u></font></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">[4]
+Área de documentação técnica do CEPEL -
+<font color="#0000ff"><u><a href="https://www.cepel.br/produtos/documentacao-tecnica/">https://www.cepel.br/produtos/documentacao-tecnica/</a></u></font></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">[5]
+Ambiente Libs de documentação técnica do CEPEL -
+<font color="#0000ff"><u><a href="https://see.cepel.br/manual/libs/latest/index.html">https://see.cepel.br/manual/libs/latest/index.html</a></u></font></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">[6]
+Intervalos dos patamares de carga -
+<font color="#0000ff"><u><a href="https://sintegre.ons.org.br/sites/9/47/paginas/servicos/historico-de-produtos.aspx?produto=Intervalos%20dos%20Patamares%20de%20Carga">https://sintegre.ons.org.br/sites/9/47/paginas/servicos/historico-de-produtos.aspx?produto=Intervalos%20dos%20Patamares%20de%20Carga</a></u></font>
+</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">[7]
+Ferramentas Auxiliares para o PMO -
+<font color="#0000ff"><u><a href="https://sintegre.ons.org.br/sites/9/52/paginas/servicos/historico-de-produtos.aspx?produto=Ferramentas%20Auxiliares%20para%20o%20PMO">https://sintegre.ons.org.br/sites/9/52/paginas/servicos/historico-de-produtos.aspx?produto=Ferramentas%20Auxiliares%20para%20o%20PMO</a></u></font></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">[8]
+DETERMINAÇÃO DA COORDENAÇÃO DA OPERAÇÃO A CURTO PRAZO - Manual
+de Referência -
+<font color="#0000ff"><u><a href="http://www.cepel.br/wp-content/uploads/2022/03/DECOMP_ManualMetodologia_2020-01_v30.1.pdf">http://www.cepel.br/wp-content/uploads/2022/03/DECOMP_ManualMetodologia_2020-01_v30.1.pdf</a></u></font></p>
+<p align="left" class="western" lang="pt-BR" style="margin-bottom: 0in">
+<br/>
+</p>
+<ol type="I">
+<li><h2 id="memoria-de-calculo"><a name="_Toc235475298"></a><a name="_Ref187844793"></a><a name="_Toc187851601"></a><a name="_Toc187851436"></a>
+<font size="4" style="font-size: 14pt"><b>Memória de Cálculo</b></font></h2>
+<ol>
+<li><h3 id="cronograma-de-manutencao-das-usinas-hidreletricas-2"><a name="_Toc235475299"></a><a name="_Ref187844811"></a>
+<font size="4" style="font-size: 14pt"><b>Cronograma de Manutenção
+		das Usinas Hidrelétricas</b></font></h3></li>
+</ol>
+</li></ol>
+<p lang="pt-BR" style="margin-bottom: 0.17in">Conforme exemplo
+trazido na seção <span style="background: #c0c0c0">4.1.2</span>, a
+manutenção na UHE Salto Grande tem duração considerada de <b>4
+dias </b>dos 7 dias da semana operativa, pois no dia 30/08/24 a
+manutenção não adentra o “intervalo de ponta”, sendo
+desconsiderada. Além disso, a manutenção é realizada em uma
+máquina de<b> 18,45 MW</b> para a usina com potência instalada de<b>
+73,8 MW</b>.</p>
+<p lang="pt-BR" style="margin-bottom: 0.17in"><br/>
+<br/>
+</p>
+<p lang="pt-BR" style="margin-bottom: 0.17in">Sendo assim, tem-se:</p>
+<p align="center" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="absmiddle" alt="Ilustração do Guia do Usuário do WebPMO" loading="lazy" name="Object15" src="assets/Guia do usuário do WebPMO_html_32b7b2c5.gif"/>
+</p>
+<p lang="pt-BR" style="margin-bottom: 0.17in"> Logo o fator de
+manutenção será:</p>
+<p align="center" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="absmiddle" alt="Ilustração do Guia do Usuário do WebPMO" loading="lazy" name="Object16" src="assets/Guia do usuário do WebPMO_html_3c6ed36a.gif"/>
+</p>
+<p lang="pt-BR" style="margin-bottom: 0.17in">Conforme exemplo
+trazido na seção <span style="background: #c0c0c0">4.1.2</span>, a
+manutenção na UHE Jayme Canet tem duração considerada de <b>33
+horas </b>(sendo 16 horas no dia 27/08 e 17 horas no dia 28/08)<b>
+</b>das 168 horas da semana operativa. Além disso, a manutenção é
+realizada em uma máquina de<b> 117,36 MW</b> para a usina com
+potência instalada de<b> 352,08 MW</b>.</p>
+<p lang="pt-BR" style="margin-bottom: 0.17in"><br/>
+<br/>
+</p>
+<p lang="pt-BR" style="margin-bottom: 0.17in">Sendo assim, tem-se:</p>
+<p align="center" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="absmiddle" alt="Ilustração do Guia do Usuário do WebPMO" loading="lazy" name="Object17" src="assets/Guia do usuário do WebPMO_html_f4e9681c.gif"/>
+</p>
+<p lang="pt-BR" style="margin-bottom: 0.17in"> Logo o fator de
+manutenção será:</p>
+<p align="center" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="absmiddle" alt="Ilustração do Guia do Usuário do WebPMO" loading="lazy" name="Object18" src="assets/Guia do usuário do WebPMO_html_f4e9681c.gif"/>
+</p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in"><br/>
+<br/>
+</p>
+<ol type="I">
+<ol start="2">
+<li><h3 id="disponibilidade-inflexibilidade-e-custo-das-usinas-termeletricas"><a name="_Ref187845041"></a><a name="_Toc235475300"></a>
+<font size="4" style="font-size: 14pt"><b>Disponibilidade,
+		Inflexibilidade e Custo das Usinas Termelétricas </b></font>
+</h3></li>
+</ol>
+</ol>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in"><a name="_Ref187847912"></a>
+Como mencionado na seção <span style="background: #c0c0c0">4.2.2</span>,
+a planilha “CargaPatamar”, disponibilizada anualmente no
+SINtegre, será apresentada a seguir. A planilha traz uma primeira
+tabela na sua aba “Hora-Patamar <i>Ano</i>”, exibindo a
+informação dos patamares horários para todos os dias do ano,
+conforme mostra a <span style="background: #c0c0c0">Figura 50</span>:</p>
+<p align="center" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="bottom" alt="Ilustração do Guia do Usuário do WebPMO" border="0" height="140" loading="lazy" name="Imagem 688501967" src="assets/Guia do usuário do WebPMO_html_ad45b0b9.png" width="529"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><a name="_Ref187847918"></a><a name="_Ref187847987"></a>
+<font size="2" style="font-size: 9pt">Figura <span style="background: #c0c0c0">5750</span>:
+Distribuição dos patamares de carga horários para todos os dias do
+ano</font></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">Nas
+colunas seguintes, há outra tabela na mesma aba, também com a
+indicação dos patamares de carga, que pode ser usada para
+preenchimento de valores horários, como a disponibilidade de uma
+usina termelétrica.</p>
+<p align="center" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="bottom" alt="Ilustração do Guia do Usuário do WebPMO" border="0" height="147" loading="lazy" name="Imagem 427416942" src="assets/Guia do usuário do WebPMO_html_cfb80702.png" width="529"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><font size="2" style="font-size: 9pt">Figura
+<span style="background: #c0c0c0">5851</span>: Distribuição dos
+patamares de carga para preenchimento</font></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">A
+seguir, o exemplo do cálculo de disponibilidade para a usina
+termelétrica fictícia trazido na seção <span style="background: #c0c0c0">4.2.2</span>
+será aplicado à planilha “CargaPatamar”, de forma a
+exemplificar sua utilização, da seguinte forma:</p>
+<p align="center" class="western" lang="pt-BR" style="margin-bottom: 0.17in">
+<img align="bottom" alt="Ilustração do Guia do Usuário do WebPMO" border="0" height="234" loading="lazy" name="Imagem 322876572" src="assets/Guia do usuário do WebPMO_html_da270cb7.png" width="529"/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.14in"><font size="2" style="font-size: 9pt">Figura
+<span style="background: #c0c0c0">5952</span>: Exemplo de
+preenchimento para cálculo da disponibilidade da usina para cada
+estágio e patamar</font></p>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in">A
+restrição de 8 MW relativa à UG2, ativa desde 20/12/2024, é
+considerada desde o início do estudo, até o seu término em
+13/01/2025 18:00, restringindo a disponibilidade a 92 MW, que
+multiplicada pelo fator de capacidade resulta em uma potência
+efetiva de 89,24 MW. Entre 07/01/2025 08:00 e 13/01/2025 18:00, a UG1
+se encontra indisponível, reduzindo adicionalmente 25 MW da
+disponibilidade, chegando-se ao valor de 67 MW, que multiplicado pelo
+fator de capacidade nos retorna uma disponibilidade de 64,99 MW. A
+partir do término das intervenções, a usina retoma sua
+disponibilidade plena de 100 MW, com potência efetiva de 97 MW.</p>
+<div id="sdfootnote1"><p class="sdfootnote-western" lang="pt-BR"><a class="sdfootnotesym" href="#sdfootnote1anc" name="sdfootnote1sym">1</a>
+	Detentores, por concessão ou autorização, de usinas e
+	reservatórios simulados individualmente nos modelos energéticos.</p>
+</div>
+<div id="sdfootnote2"><p class="sdfootnote-western" lang="pt-BR"><a class="sdfootnotesym" href="#sdfootnote2anc" name="sdfootnote2sym">2</a>
+	Descrevem detalhadamente a metodologia e modelagem matemática
+	utilizada pelos modelos.</p>
+</div>
+<div id="sdfootnote3"><p class="sdfootnote-western" lang="pt-BR"><a class="sdfootnotesym" href="#sdfootnote3anc" name="sdfootnote3sym">3</a>
+	Descrevem aspectos processuais de utilização dos modelos.</p>
+</div>
+<div id="sdfootnote4"><p class="sdfootnote-western" lang="pt-BR"><a class="sdfootnotesym" href="#sdfootnote4anc" name="sdfootnote4sym">4</a>
+	A transmissão das reuniões do PMO fica disponível na página
+	inicial do <font color="#0000ff"><u><a href="https://www.ons.org.br/">site
+	do ONS</a></u></font> ou diretamente no <font color="#0000ff"><u><a href="https://vocs.tv/ons">link
+	da transmissão</a></u></font>.</p>
+</div>
+<div id="sdfootnote5"><p class="sdfootnote-western" lang="pt-BR"><a class="sdfootnotesym" href="#sdfootnote5anc" name="sdfootnote5sym">5</a>
+	O <font color="#0000ff"><u><a href="https://sintegre.ons.org.br/sites/9/52/paginas/forum/lista.aspx">Fórum
+	do PMO</a></u></font> fica aberto das 9:00 às 12:00 de sexta-feira
+	para envio de eventuais dúvidas e/ou questionamentos sobre o deck
+	preliminar disponibilizado.</p>
+</div>
+<div id="sdfootnote6"><p class="sdfootnote-western" lang="pt-BR"><a class="sdfootnotesym" href="#sdfootnote6anc" name="sdfootnote6sym">6</a>
+	De manhã, é publicado o <font color="#0000ff"><u><a href="https://sintegre.ons.org.br/sites/9/52/paginas/servicos/historico-de-produtos.aspx?produto=Informe%20do%20Programa%20Mensal%20de%20Opera%C3%A7%C3%A3o%20-%20IPMO">Informe
+	Preliminar do PMO</a></u></font> e à tarde são publicados o
+	<font color="#0000ff"><u><a href="https://sintegre.ons.org.br/sites/9/52/paginas/servicos/historico-de-produtos.aspx?produto=Relat%C3%B3rio%20com%20Dados%20para%20Defini%C3%A7%C3%A3o%20da%20Bandeira%20Tarif%C3%A1ria">Informe
+	para a Bandeira Tarifária</a></u></font>, o <font color="#0000ff"><u><a href="https://sintegre.ons.org.br/sites/9/52/paginas/servicos/historico-de-produtos.aspx?produto=Relat%C3%B3rio%20Executivo%20do%20PMO">Relatório
+	Executivo do PMO</a></u></font> e a <font color="#0000ff"><u><a href="https://sintegre.ons.org.br/sites/9/52/paginas/servicos/historico-de-produtos.aspx?produto=Nota%20T%C3%A9cnica%20Sum%C3%A1rio%20Executivo%20do%20PMO">Nota
+	Técnica do PMO</a></u></font>.</p>
+</div>
+<div id="sdfootnote7"><p class="sdfootnote-western" lang="pt-BR"><a class="sdfootnotesym" href="#sdfootnote7anc" name="sdfootnote7sym">7</a>
+	O <font color="#0000ff"><u><a href="https://sintegre.ons.org.br/sites/9/52/paginas/forum/lista.aspx">Fórum
+	do PMO</a></u></font> fica aberto das 9:00 às 12:00 de sexta-feira
+	para envio de eventuais dúvidas e/ou questionamentos sobre o deck
+	preliminar disponibilizado.</p>
+</div>
+<div id="sdfootnote8"><p class="sdfootnote-western" lang="pt-BR"><a class="sdfootnotesym" href="#sdfootnote8anc" name="sdfootnote8sym">8</a>
+	A transmissão das Reuniões Semanais da Programação da Operação
+	fica disponível na página inicial do <font color="#0000ff"><u><a href="https://www.ons.org.br/">site
+	do ONS</a></u></font> ou diretamente no <font color="#0000ff"><u><a href="https://vocs.tv/ons">link
+	da transmissão</a></u></font>.</p>
+</div>
+<div id="sdfootnote9"><p class="sdfootnote-western" lang="pt-BR"><a class="sdfootnotesym" href="#sdfootnote9anc" name="sdfootnote9sym">9</a>
+	De manhã, é publicado o <font color="#0000ff"><u><a href="https://sintegre.ons.org.br/sites/9/52/paginas/servicos/historico-de-produtos.aspx?produto=Informe%20do%20Programa%20Mensal%20de%20Opera%C3%A7%C3%A3o%20-%20IPMO">Informe
+	Preliminar do PMO</a></u></font> e à tarde são publicados o
+	<font color="#0000ff"><u><a href="https://sintegre.ons.org.br/sites/9/52/paginas/servicos/historico-de-produtos.aspx?produto=Relat%C3%B3rio%20Executivo%20do%20PMO">Relatório
+	Executivo do PMO</a></u></font> e a <font color="#0000ff"><u><a href="https://sintegre.ons.org.br/sites/9/52/paginas/servicos/historico-de-produtos.aspx?produto=Nota%20T%C3%A9cnica%20Sum%C3%A1rio%20Executivo%20do%20PMO">Nota
+	Técnica do PMO</a></u></font>.</p>
+</div>
+<div id="sdfootnote10"><p class="sdfootnote-western" lang="pt-BR"><a class="sdfootnotesym" href="#sdfootnote10anc" name="sdfootnote10sym">10</a>
+	No SINtegre, o sistema WebPMO leva o nome de SGIPMO. Dessa forma, o
+	acesso de novos usuários deve ser solicitado para o sistema
+	“SGIPMO”.</p>
+</div>
+<div title="footer">
+<table cellpadding="5" cellspacing="0" width="624">
+<col width="28"/>
+<col width="516"/>
+<col width="12"/>
+<col width="1"/>
+<col width="16"/>
+<tr>
+<td height="24" style="border: none; padding: 0in" width="28"><p><br/>
+</p>
+</td>
+<td style="border: none; padding: 0in" width="516"><p align="center" lang="pt-BR">
+<br/>
+</p>
+</td>
+<td style="border: none; padding: 0in" width="12"><p lang="pt-BR"><span style="background: #c0c0c0"><sdfield format="PAGE" subtype="RANDOM" type="PAGE">0</sdfield></span></p>
+</td>
+<td style="border: none; padding: 0in" width="1"><p lang="pt-BR">/</p>
+</td>
+<td style="border: none; padding: 0in" width="16"><p lang="pt-BR"><span style="background: #c0c0c0"><sdfield format="PAGE" subtype="PAGE" type="DOCSTAT">5</sdfield></span></p>
+</td>
+</tr>
+</table>
+<p class="western" lang="pt-BR" style="margin-bottom: 0.17in"><img align="left" alt="Ilustração do Guia do Usuário do WebPMO" border="0" height="24" loading="lazy" name="Imagem 55" src="assets/Guia do usuário do WebPMO_html_dc37440b.png" width="29"/>
+<br/>
+<br/>
+</p>
+<p align="center" lang="pt-BR" style="margin-bottom: 0.17in; letter-spacing: 0.2pt">
+<br/>
+<br/>
+</p>
+</div>
+</article><footer>Operador Nacional do Sistema Elétrico · WebPMO · <a href="mailto:pmo@ons.org.br">pmo@ons.org.br</a></footer></main></div>
+<script src="app.js"></script></body></html>

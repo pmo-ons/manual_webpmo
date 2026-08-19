@@ -1,0 +1,9 @@
+{
+  "title": "Guia do Usuário do WebPMO",
+  "version": "2.0",
+  "language": "pt-BR",
+  "preferredDomain": "guia.webpmo.ons.org.br",
+  "fallbackDomain": "guia.webpmo.ons.com.br",
+  "access": "public-anonymous-readonly",
+  "source": "Guia do usuário do WebPMO.docx"
+}
